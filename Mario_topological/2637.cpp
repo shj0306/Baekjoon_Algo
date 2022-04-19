@@ -1,41 +1,49 @@
 //#include <bits/stdc++.h>
-//
 //#define all(x) (x).begin(), (x).end()
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
-//
-//int indegree[101];
-//int res[101];
+//using pii = pair<int,int>;
+//using ll = long long;
+//int N, M, indegree[101], dist[101][101];
+//vector<int> basic;
+//vector<vector<pii>> adj;
 //
 //int main() {
 //    fast_io;
-//    int N, M;
 //    cin >> N >> M;
-//    vector<vector<pair<int, int>>> adj(N + 1);
-//    set<int> s;
-//    for (int i = 0; i < M; i++) {
-//        int u1, v1, cnt;
-//        cin >> u1 >> v1 >> cnt;
-//        indegree[v1]++;
-//        adj[u1].emplace_back(v1, cnt);
-//        s.insert(u1);
+//    adj.resize(N+1);
+//
+//    for (int i = 1; i <= M; i++) {
+//        int x, y, k;
+//        cin >> x >> y >> k;
+//        adj[y].emplace_back(x,k);
+//        indegree[x]++;
 //    }
 //
 //    queue<int> q;
-//    q.push(N);
-//    res[N] = 1;
+//    for (int i = 1; i <= N; i++) {
+//        if (indegree[i] == 0) {
+//            q.push(i);
+//            dist[i][i] = 1;
+//            basic.push_back(i);
+//        }
+//    }
 //
-//    while (!q.empty()) {
+//    while(!q.empty()) {
 //        int cur = q.front();
 //        q.pop();
-//        for (auto[nxt, cnt]: adj[cur]) {
-//            res[nxt] += res[cur] * cnt;
+//
+//        for (auto [nxt, cnt] : adj[cur]) {
+//            if (dist[cur][cur] != 1) { //not basic
+//                for (int num : basic) {
+//                    dist[nxt][num] += dist[cur][num] * cnt;
+//                }
+//            }else dist[nxt][cur] += cnt;
 //            if (--indegree[nxt] == 0) q.push(nxt);
 //        }
 //    }
-//    for (int i = 1; i <= N; i++) {
-//        if (s.find(i) == s.end()) {
-//            cout << i << ' ' << res[i] << '\n';
-//        }
+//
+//    for (int num : basic) {
+//        cout << num << ' ' << dist[N][num] << '\n';
 //    }
 //}

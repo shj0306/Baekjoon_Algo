@@ -2,29 +2,31 @@
 //#define all(x) (x).begin(), (x).end()
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
-//
+//using pii = pair<int,int>;
+//using ll = long long;
 //int N, M;
-//vector<int> vec;
+//vector<int> v;
 //
 //bool bin_search(int s, int e, int val) {
-//    if (s > e) return false;
-//    int mid = (s+e) / 2;
-//    if (vec[mid] == val) return true;
-//    else if (vec[mid] > val) return bin_search(s, mid-1, val);
-//    else return bin_search(mid+1, e, val);
+//    while(s <= e) {
+//        int mid = (s + e) / 2;
+//        if (v[mid] > val) e = mid - 1;
+//        else if (v[mid] < val) s = mid + 1;
+//        else return true;
+//    }
+//    return false;
 //}
 //
 //int main() {
 //    fast_io;
 //    cin >> N;
-//    vec = vector<int>(N+1);
-//    for (int i = 1; i <= N; i++) cin >> vec[i];
-//    sort(begin(vec)+1, end(vec));
+//    v = vector<int>(N);
+//
+//    for (int i = 0; i < N; i++) cin >> v[i];
+//    sort(all(v));
 //    cin >> M;
 //    for (int i = 0; i < M; i++) {
-//        int num;
-//        cin >> num;
-//        if (bin_search(1, N, num)) cout << 1 << '\n';
-//        else cout << 0 << '\n';
+//        int num; cin >> num;
+//        cout << bin_search(0, N-1, num) << '\n';
 //    }
 //}

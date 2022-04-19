@@ -3,24 +3,29 @@
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
 //using pii = pair<int,int>;
+//using ll = long long;
+//int N, arr[101];
+//ll dp[101][1000];
 //
-//long long dp[100][21];
-//int n, a[100];
+///*
+// * 중간 결과 중 음수거나 20을 넘는 값이 나오면 안된다
+// */
 //
-//long long solve(int idx, int sum) {
-//    if (idx == n-1) return sum == a[idx];
-//    long long &ret = dp[idx][sum];
-//    if (ret != 0) return ret;
-//    if (sum + a[idx] <= 20) ret += solve(idx+1, sum + a[idx]);
-//    if (sum - a[idx] >= 0) ret += solve(idx+1, sum - a[idx]);
+//ll solve(int idx, int res) {
+//    ll &ret = dp[idx][res];
+//    if (res < 0 || res > 20) return ret = 0;
+//    if (idx == N) return arr[idx] == res;
+//    if (ret != -1) return ret;
+//    ret = 0;
+//    ret += solve(idx+1, res + arr[idx]) + solve(idx+1, res - arr[idx]);
 //    return ret;
 //}
 //
 //int main() {
 //    fast_io;
-//    cin >> n;
-//    for (int i = 0; i < n; i++) cin >> a[i];
-//    memset(dp,0,sizeof(dp));
-//    cout << solve(1, a[0]);
-//}
+//    cin >> N;
+//    for (int i = 1; i <= N; i++) cin >> arr[i];
+//    memset(dp, -1, sizeof(dp));
 //
+//    cout << solve(2, arr[1]);
+//}

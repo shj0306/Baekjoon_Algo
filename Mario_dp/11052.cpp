@@ -1,22 +1,27 @@
-/*
-#include <bits/stdc++.h>
-using namespace std;
-
-int main() {
-    int n;
-    cin >> n;
-    vector<int> card(n+1);
-    vector<int> dp(n+1, 0);
-    for (int i = 1; i <= n; i++) cin >> card[i];
-    dp[1] = card[1];
-    for (int i = 2; i <= n; i++) {
-        for (int j = 1; j <= i; j++) {
-            dp[i] = max(dp[i], dp[i-j] + card[j]);
-        }
-    }
-    cout << dp[n] << '\n';
-}
-*/
-/*
- * i장을 뽑는 최대 갯수 = max(i장 뽑는 최대 값, i-j장 뽑는 최대값 + j장 들어있는 카드팩 값) (j >= 1 && j <= i)
- */
+//#include <bits/stdc++.h>
+//#define all(x) (x).begin(), (x).end()
+//#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+//using namespace std;
+//using pii = pair<int,int>;
+//using ll = long long;
+//int N, dp[1001], card[1001];
+//
+//int solve(int num) { //dp[num] : num장 남았을 때 지불 할 수 있는 최대 비용
+//    if (num == 0) return 0;
+//    int &ret = dp[num];
+//    if (ret != 0) return ret;
+//
+//    for (int i = 1; i <= N; i++) {
+//        if (num >= i) ret = max(ret, solve(num-i) + card[i]);
+//    }
+//    return ret;
+//}
+//
+//int main() {
+//    fast_io;
+//    cin >> N;
+//
+//    for (int i = 1; i <= N; i++) cin >> card[i];
+//
+//    cout << solve(N);
+//}

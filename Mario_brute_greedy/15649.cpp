@@ -1,25 +1,25 @@
 //#include <bits/stdc++.h>
-//
 //#define all(x) (x).begin(), (x).end()
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
-//int N, M;
-//bool visited[9];
-//vector<int> vec;
+//using pii = pair<int,int>;
+//using ll = long long;
+//int N, M, check[9];
+//vector<int> v;
 //
-//void dfs(int cnt) {
+//void solve(int idx, int cnt) {
 //    if (cnt == M) {
-//        for (auto val: vec) cout << val << ' ';
+//        for (auto val : v) cout << val << ' ';
 //        cout << '\n';
 //        return;
 //    }
 //    for (int i = 1; i <= N; i++) {
-//        if (!visited[i]) {
-//            visited[i] = true;
-//            vec.push_back(i);
-//            dfs(cnt + 1);
-//            visited[i] = false;
-//            vec.pop_back();
+//        if (!check[i]) {
+//            check[i] = true;
+//            v.push_back(i);
+//            solve(i, cnt + 1);
+//            v.pop_back();
+//            check[i] = false;
 //        }
 //    }
 //}
@@ -27,5 +27,5 @@
 //int main() {
 //    fast_io;
 //    cin >> N >> M;
-//    dfs(0);
+//    solve(1, 0);
 //}

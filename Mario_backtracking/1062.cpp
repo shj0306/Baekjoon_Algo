@@ -3,58 +3,58 @@
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
 //using pii = pair<int,int>;
-//#define f first
-//#define s second;
+//using ll = long long;
+//int N, K, trie, ans, alphabet[26];
+//vector<string> words;
 //
-////bit_masking, DFS, brute_force, back_tracking
-////알파벳은 26자가 최대이므로 비트마스킹 활용 가능
-////https://nanyoungkim.tistory.com/173 참고
-//// 알파벳 26자를 k-5개 살펴보면서 각 단어들의 학습 여부 파악
-
-//int n,k,ans;
-//vector<int> anta;
-//
-//
-//void solve(int start, int cnt, int checked) {
-//    if (cnt == 0) { //더 학습할 수 있는 글자가 없는 경우
-//        int res = 0;
-//        for (int i = 0; i < n; i++) {
-//            if ((anta[i] & checked) == anta[i]) res++;
+///*
+// * 배운 알파벳을 표시하기 위해 alphabet[26] 배열 생성
+// * antic는 반드시 알고 있어햐 한다.
+// * a를 배웠다면 alphabet['a'-'a']=1
+// * K-5개만큼 학습했다면 얼마나 많은 단어를 읽을 수 있는 지 체킹
+// */
+//void back_tracking(int idx, int k) {
+//    if (k == 0) {
+//        int cnt = 0;
+//        for (const auto& word : words) {
+//            bool is_suc = true;
+//            for (auto c : word) {
+//                if (!alphabet[c-'a']) {
+//                    is_suc = false;
+//                    break;
+//                }
+//            }
+//            if (is_suc) cnt++;
 //        }
-//        ans = max(ans, res);
+//        ans = max(ans, cnt);
 //        return;
 //    }
 //
-//    for (int i = start; i < 26; i++) {
-//        if ((checked & (1 << i)) == 0) { //i번째 알파벳을 선택하지 않았다면
-//            checked |= (1 << i);
-//            solve(i, cnt-1, checked);
-//            checked &= ~(1 << i);
+//    for (int i = idx; i < 26; i++) {
+//        if (!alphabet[i]) {
+//            alphabet[i] = 1;
+//            back_tracking(i, k-1);
+//            alphabet[i] = 0;
 //        }
 //    }
 //}
 //
 //int main() {
 //    fast_io;
-//    cin >> n >> k;
-//    int checked = 0;
-//    for (int i = 0; i < n; i++) {
-//        string word; cin >> word;
-//        int num = 0;
-//        for (char j : word) {
-//            num |= (1 << (j - 'a'));
-//        }
-//        anta.push_back(num);
+//    cin >> N >> K;
+//    alphabet['a'-'a'] = 1; alphabet['n'-'a'] = 1;
+//    alphabet['t'-'a'] = 1; alphabet['i'-'a'] = 1;
+//    alphabet['c'-'a'] = 1;
+//
+//    words.resize(N);
+//    for (int i = 0; i < N; i++) cin >> words[i];
+//
+//    if (K < 5) {
+//        puts("0");
+//        return 0;
 //    }
-//    if (k < 5) cout << 0;
-//    else if (k == 26) cout << n;
-//    else {
-//        checked |= 1 << ('a'-'a');
-//        checked |= 1 << ('c'-'a');
-//        checked |= 1 << ('t'-'a');
-//        checked |= 1 << ('i'-'a');
-//        checked |= 1 << ('n'-'a');
-//        solve(0, k-5, checked);
-//        cout << ans;
-//    }
+//    K -= 5;
+//
+//    back_tracking(0, K);
+//    cout << ans << '\n';
 //}

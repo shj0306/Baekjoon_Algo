@@ -3,40 +3,40 @@
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
 //using pii = pair<int,int>;
-//using pll = pair<long long, long long>;
-//const int INF = -1e9;
-//
-//int n, town[10001], dp[10001][2];
+//using ll = long long;
+//int N, town[10001], dp[10001][2];
 //bool visited[10001];
 //vector<vector<int>> tree;
 //
-////dp[now][is_good] : now번 마을이 is_good상태일 때
-//// 해당 마을을 루트로 하는 서브트리의 우수마을들 인구수 최댓값
-//void solve(int now) {
-//    visited[now] = true;
-//    dp[now][0] = 0;
-//    dp[now][1] = town[now];
+//int solve(int node, int state) {
 //
-//    for (auto nxt : tree[now]) {
-//        if (visited[nxt]) continue;
-//        solve(nxt);
-//        dp[now][0] += max(dp[nxt][0], dp[nxt][1]);
-//        dp[now][1] += dp[nxt][0];
+//    if (dp[node][state] != -1) return dp[node][state];
+//    int res = (state == 1 ? town[node] : 0);
+//    visited[node] = true;
+//
+//    for (int nxt : tree[node]) {
+//        if (!visited[nxt]) {
+//            if (state) res += solve(nxt, 0);
+//            else res += max(solve(nxt, 0), solve(nxt, 1));
+//        }
 //    }
+//    visited[node] = false;
+//    return dp[node][state] = res;
 //}
 //
 //int main() {
 //    fast_io;
-//    cin >> n;
-//    for (int i = 1; i <= n; i++) cin >> town[i];
+//    cin >> N;
+//    tree.resize(N+1);
 //
-//    tree.resize(n+1);
-//    for (int i = 1; i < n; i++) {
+//    for (int i = 1; i <= N; i++) cin >> town[i];
+//    memset(dp, -1, sizeof(dp));
+//
+//    for (int i = 1; i < N; i++) {
 //        int u, v; cin >> u >> v;
 //        tree[u].push_back(v);
 //        tree[v].push_back(u);
 //    }
-//    memset(visited, false, sizeof(visited));
-//    solve(1);
-//    cout << max(dp[1][0], dp[1][1]);
+//
+//    cout << max(solve(1, 0), solve(1, 1)) << '\n';
 //}

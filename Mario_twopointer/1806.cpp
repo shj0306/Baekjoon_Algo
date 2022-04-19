@@ -4,20 +4,19 @@
 //using namespace std;
 //using pii = pair<int,int>;
 //using ll = long long;
-//int n,s;
+//const int INF = 1e5;
+//int N, S;
 //
 //int main() {
 //    fast_io;
-//    cin >> n >> s;
-//    vector<int> v(n);
+//    cin >> N >> S;
+//    vector<int> v(N);
+//    for (int i = 0; i < N; i++) cin >> v[i];
 //
-//    for (int i = 0; i < n; i++) cin >> v[i];
-//
-//    int l = 0, r = 0, sum = 0, res = 100001;
-//    //더 더해야 하는 데 더할 게 없을 때 종료
-//    while(true) {
-//        if (sum < s) {
-//            if (r == n) break;
+//    int res = INF, l = 0, r = 0, sum = 0;
+//    while(r <= N) {
+//        if (sum < S) {
+//            if (r == N) break;
 //            sum += v[r++];
 //        }
 //        else {
@@ -25,5 +24,6 @@
 //            sum -= v[l++];
 //        }
 //    }
-//    cout << (res == 100001 ? 0 : res) << '\n';
+//
+//    cout << (res == INF ? 0 : res) << '\n';
 //}

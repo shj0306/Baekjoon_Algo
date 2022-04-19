@@ -1,0 +1,8 @@
+# ninja log v5
+1	166	6692184792463224	CMakeFiles/coding.dir/eratos.cpp.obj	931c2b508037e17f
+0	164	6692188180350348	CMakeFiles/coding.dir/factorization.cpp.obj	8a9cfef09c40d132
+598	750	6692203909537400	coding.exe	a98ea04c559b64f7
+0	49	6692178400968549	CMakeFiles/coding.dir/best_prime.cpp.obj	cf78ca8a6a9491e2
+8	160	6692190558671519	CMakeFiles/coding.dir/1978.cpp.obj	e41b719f52f666ef
+8	152	6692198354106898	CMakeFiles/coding.dir/2960.cpp.obj	73c43960a3800b8f
+0	598	6692203908182807	CMakeFiles/coding.dir/4948.cpp.obj	e414b44e5ede52c0

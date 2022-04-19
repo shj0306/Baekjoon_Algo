@@ -1,50 +1,40 @@
-/*
-#include <bits/stdc++.h>
-using namespace std;
-int n;
-double p_e, p_w, p_s, p_n, simple_prob;
-bool visited[31][31];
-
-void back_tracking(int r, int c, int depth, double prob) {
-    if (depth == n) {
-        simple_prob += prob;
-        return;
-    }
-    //east
-    if (!visited[r][c+1]) {
-        visited[r][c+1] = true;
-        back_tracking(r, c+1, depth+1, prob * p_e);
-        visited[r][c+1] = false;
-    }
-    //west
-    if (!visited[r][c-1]) {
-        visited[r][c-1] = true;
-        back_tracking(r, c-1, depth+1, prob * p_w);
-        visited[r][c-1] = false;
-    }
-    //south
-    if (!visited[r+1][c]) {
-        visited[r+1][c] = true;
-        back_tracking(r+1, c, depth+1, prob * p_s);
-        visited[r+1][c] = false;
-    }
-    //north
-    if (!visited[r-1][c]) {
-        visited[r-1][c] = true;
-        back_tracking(r-1, c, depth+1, prob * p_n);
-        visited[r-1][c] = false;
-    }
-}
-int main() {
-    double e,w,s,nor;
-    cin >> n >> e >> w >> s >> nor;
-    p_e = e / 100; p_w = w / 100;
-    p_s = s / 100; p_n = nor / 100;
-
-    memset(visited, false, sizeof(visited));
-    visited[15][15] = true;
-    back_tracking(15,15,0,1.0);
-    printf("%.9f\n", simple_prob);
-    return 0;
-}
-*/
+//#include <bits/stdc++.h>
+//#define all(x) (x).begin(), (x).end()
+//#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+//using namespace std;
+//using pii = pair<int,int>;
+//using ll = long long;
+//int N, arr[35][35];
+//double ans, dir_p[4];
+//int dx[] = {1,-1,0,0};
+//int dy[] = {0,0,1,-1};
+//
+//void back_tracking(int cnt, int x, int y, double prob) {
+//    if (cnt == N) {
+//        ans += prob;
+//        return;
+//    }
+//
+//    for (int i = 0; i < 4; i++) {
+//        int nx = x + dx[i];
+//        int ny = y + dy[i];
+//
+//        if (arr[ny][nx]) continue;
+//        arr[ny][nx] = 1;
+//        back_tracking(cnt+1, nx, ny, prob * dir_p[i]);
+//        arr[ny][nx] = 0;
+//    }
+//}
+//
+//int main() {
+//    fast_io;
+//    cin >> N;
+//    for (int i = 0; i < 4; i++) {
+//        int p; cin >> p;
+//        dir_p[i] = (double)p / 100;
+//    }
+//
+//    arr[15][15] = 1;
+//    back_tracking(0, 15, 15, 1.0);
+//    printf("%.9lf\n", ans);
+//}

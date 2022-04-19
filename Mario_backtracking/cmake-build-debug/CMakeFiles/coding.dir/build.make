@@ -33,10 +33,10 @@ NULL=nul
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -530,6 +530,329 @@ CMakeFiles\coding.dir\1799.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\1799.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\1799.cpp
 <<
 
+CMakeFiles\coding.dir\15654.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\15654.cpp.obj: ..\15654.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/coding.dir/15654.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\15654.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\15654.cpp
+<<
+
+CMakeFiles\coding.dir\15654.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/15654.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\15654.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\15654.cpp
+<<
+
+CMakeFiles\coding.dir\15654.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/15654.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\15654.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\15654.cpp
+<<
+
+CMakeFiles\coding.dir\15655.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\15655.cpp.obj: ..\15655.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/coding.dir/15655.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\15655.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\15655.cpp
+<<
+
+CMakeFiles\coding.dir\15655.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/15655.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\15655.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\15655.cpp
+<<
+
+CMakeFiles\coding.dir\15655.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/15655.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\15655.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\15655.cpp
+<<
+
+CMakeFiles\coding.dir\15656.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\15656.cpp.obj: ..\15656.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/coding.dir/15656.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\15656.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\15656.cpp
+<<
+
+CMakeFiles\coding.dir\15656.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/15656.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\15656.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\15656.cpp
+<<
+
+CMakeFiles\coding.dir\15656.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/15656.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\15656.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\15656.cpp
+<<
+
+CMakeFiles\coding.dir\15657.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\15657.cpp.obj: ..\15657.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/coding.dir/15657.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\15657.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\15657.cpp
+<<
+
+CMakeFiles\coding.dir\15657.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/15657.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\15657.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\15657.cpp
+<<
+
+CMakeFiles\coding.dir\15657.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/15657.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\15657.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\15657.cpp
+<<
+
+CMakeFiles\coding.dir\15664.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\15664.cpp.obj: ..\15664.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/coding.dir/15664.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\15664.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\15664.cpp
+<<
+
+CMakeFiles\coding.dir\15664.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/15664.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\15664.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\15664.cpp
+<<
+
+CMakeFiles\coding.dir\15664.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/15664.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\15664.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\15664.cpp
+<<
+
+CMakeFiles\coding.dir\15665.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\15665.cpp.obj: ..\15665.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/coding.dir/15665.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\15665.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\15665.cpp
+<<
+
+CMakeFiles\coding.dir\15665.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/15665.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\15665.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\15665.cpp
+<<
+
+CMakeFiles\coding.dir\15665.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/15665.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\15665.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\15665.cpp
+<<
+
+CMakeFiles\coding.dir\15666.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\15666.cpp.obj: ..\15666.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/coding.dir/15666.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\15666.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\15666.cpp
+<<
+
+CMakeFiles\coding.dir\15666.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/15666.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\15666.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\15666.cpp
+<<
+
+CMakeFiles\coding.dir\15666.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/15666.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\15666.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\15666.cpp
+<<
+
+CMakeFiles\coding.dir\1062_bit.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\1062_bit.cpp.obj: ..\1062_bit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/coding.dir/1062_bit.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\1062_bit.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\1062_bit.cpp
+<<
+
+CMakeFiles\coding.dir\1062_bit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/1062_bit.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\1062_bit.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\1062_bit.cpp
+<<
+
+CMakeFiles\coding.dir\1062_bit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/1062_bit.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\1062_bit.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\1062_bit.cpp
+<<
+
+CMakeFiles\coding.dir\10974.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\10974.cpp.obj: ..\10974.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/coding.dir/10974.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\10974.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\10974.cpp
+<<
+
+CMakeFiles\coding.dir\10974.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/10974.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\10974.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\10974.cpp
+<<
+
+CMakeFiles\coding.dir\10974.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/10974.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\10974.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\10974.cpp
+<<
+
+CMakeFiles\coding.dir\16922.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\16922.cpp.obj: ..\16922.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/coding.dir/16922.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\16922.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\16922.cpp
+<<
+
+CMakeFiles\coding.dir\16922.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/16922.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\16922.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\16922.cpp
+<<
+
+CMakeFiles\coding.dir\16922.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/16922.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\16922.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\16922.cpp
+<<
+
+CMakeFiles\coding.dir\18429.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\18429.cpp.obj: ..\18429.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/coding.dir/18429.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\18429.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\18429.cpp
+<<
+
+CMakeFiles\coding.dir\18429.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/18429.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\18429.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\18429.cpp
+<<
+
+CMakeFiles\coding.dir\18429.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/18429.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\18429.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\18429.cpp
+<<
+
+CMakeFiles\coding.dir\19949.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\19949.cpp.obj: ..\19949.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/coding.dir/19949.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\19949.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\19949.cpp
+<<
+
+CMakeFiles\coding.dir\19949.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/19949.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\19949.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\19949.cpp
+<<
+
+CMakeFiles\coding.dir\19949.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/19949.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\19949.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\19949.cpp
+<<
+
+CMakeFiles\coding.dir\6987.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\6987.cpp.obj: ..\6987.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/coding.dir/6987.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\6987.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\6987.cpp
+<<
+
+CMakeFiles\coding.dir\6987.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/6987.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\6987.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\6987.cpp
+<<
+
+CMakeFiles\coding.dir\6987.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/6987.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\6987.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\6987.cpp
+<<
+
+CMakeFiles\coding.dir\19942.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\19942.cpp.obj: ..\19942.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/coding.dir/19942.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\19942.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\19942.cpp
+<<
+
+CMakeFiles\coding.dir\19942.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/19942.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\19942.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\19942.cpp
+<<
+
+CMakeFiles\coding.dir\19942.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/19942.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\19942.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\19942.cpp
+<<
+
+CMakeFiles\coding.dir\1038.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\1038.cpp.obj: ..\1038.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/coding.dir/1038.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\1038.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\1038.cpp
+<<
+
+CMakeFiles\coding.dir\1038.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/1038.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\1038.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\1038.cpp
+<<
+
+CMakeFiles\coding.dir\1038.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/1038.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\1038.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\1038.cpp
+<<
+
+CMakeFiles\coding.dir\2023.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\2023.cpp.obj: ..\2023.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/coding.dir/2023.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\2023.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\2023.cpp
+<<
+
+CMakeFiles\coding.dir\2023.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/2023.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\2023.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\2023.cpp
+<<
+
+CMakeFiles\coding.dir\2023.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/2023.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\2023.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\2023.cpp
+<<
+
+CMakeFiles\coding.dir\7490.cpp.obj: CMakeFiles\coding.dir\flags.make
+CMakeFiles\coding.dir\7490.cpp.obj: ..\7490.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/coding.dir/7490.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\coding.dir\7490.cpp.obj /FdCMakeFiles\coding.dir\ /FS -c C:\Users\tjgml\clion\Mario_backtracking\7490.cpp
+<<
+
+CMakeFiles\coding.dir\7490.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/coding.dir/7490.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\coding.dir\7490.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tjgml\clion\Mario_backtracking\7490.cpp
+<<
+
+CMakeFiles\coding.dir\7490.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/coding.dir/7490.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\coding.dir\7490.cpp.s /c C:\Users\tjgml\clion\Mario_backtracking\7490.cpp
+<<
+
 # Object files for target coding
 coding_OBJECTS = \
 "CMakeFiles\coding.dir\main.cpp.obj" \
@@ -556,7 +879,24 @@ coding_OBJECTS = \
 "CMakeFiles\coding.dir\1062.cpp.obj" \
 "CMakeFiles\coding.dir\3980.cpp.obj" \
 "CMakeFiles\coding.dir\22944.cpp.obj" \
-"CMakeFiles\coding.dir\1799.cpp.obj"
+"CMakeFiles\coding.dir\1799.cpp.obj" \
+"CMakeFiles\coding.dir\15654.cpp.obj" \
+"CMakeFiles\coding.dir\15655.cpp.obj" \
+"CMakeFiles\coding.dir\15656.cpp.obj" \
+"CMakeFiles\coding.dir\15657.cpp.obj" \
+"CMakeFiles\coding.dir\15664.cpp.obj" \
+"CMakeFiles\coding.dir\15665.cpp.obj" \
+"CMakeFiles\coding.dir\15666.cpp.obj" \
+"CMakeFiles\coding.dir\1062_bit.cpp.obj" \
+"CMakeFiles\coding.dir\10974.cpp.obj" \
+"CMakeFiles\coding.dir\16922.cpp.obj" \
+"CMakeFiles\coding.dir\18429.cpp.obj" \
+"CMakeFiles\coding.dir\19949.cpp.obj" \
+"CMakeFiles\coding.dir\6987.cpp.obj" \
+"CMakeFiles\coding.dir\19942.cpp.obj" \
+"CMakeFiles\coding.dir\1038.cpp.obj" \
+"CMakeFiles\coding.dir\2023.cpp.obj" \
+"CMakeFiles\coding.dir\7490.cpp.obj"
 
 # External object files for target coding
 coding_EXTERNAL_OBJECTS =
@@ -586,10 +926,27 @@ coding.exe: CMakeFiles\coding.dir\1062.cpp.obj
 coding.exe: CMakeFiles\coding.dir\3980.cpp.obj
 coding.exe: CMakeFiles\coding.dir\22944.cpp.obj
 coding.exe: CMakeFiles\coding.dir\1799.cpp.obj
+coding.exe: CMakeFiles\coding.dir\15654.cpp.obj
+coding.exe: CMakeFiles\coding.dir\15655.cpp.obj
+coding.exe: CMakeFiles\coding.dir\15656.cpp.obj
+coding.exe: CMakeFiles\coding.dir\15657.cpp.obj
+coding.exe: CMakeFiles\coding.dir\15664.cpp.obj
+coding.exe: CMakeFiles\coding.dir\15665.cpp.obj
+coding.exe: CMakeFiles\coding.dir\15666.cpp.obj
+coding.exe: CMakeFiles\coding.dir\1062_bit.cpp.obj
+coding.exe: CMakeFiles\coding.dir\10974.cpp.obj
+coding.exe: CMakeFiles\coding.dir\16922.cpp.obj
+coding.exe: CMakeFiles\coding.dir\18429.cpp.obj
+coding.exe: CMakeFiles\coding.dir\19949.cpp.obj
+coding.exe: CMakeFiles\coding.dir\6987.cpp.obj
+coding.exe: CMakeFiles\coding.dir\19942.cpp.obj
+coding.exe: CMakeFiles\coding.dir\1038.cpp.obj
+coding.exe: CMakeFiles\coding.dir\2023.cpp.obj
+coding.exe: CMakeFiles\coding.dir\7490.cpp.obj
 coding.exe: CMakeFiles\coding.dir\build.make
 coding.exe: CMakeFiles\coding.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable coding.exe"
-	C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\coding.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\coding.dir\objects1.rsp @<<
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking CXX executable coding.exe"
+	C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe -E vs_link_exe --intdir=CMakeFiles\coding.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\coding.dir\objects1.rsp @<<
  /out:coding.exe /implib:coding.lib /pdb:C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\coding.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 

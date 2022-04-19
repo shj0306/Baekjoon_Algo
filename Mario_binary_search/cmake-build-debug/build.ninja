@@ -315,6 +315,55 @@ build CMakeFiles\coding.dir\7453.cpp.obj: CXX_COMPILER__coding_Debug C$:\Users\t
   TARGET_COMPILE_PDB = CMakeFiles\coding.dir\
   TARGET_PDB = coding.pdb
 
+build CMakeFiles\coding.dir\7795.cpp.obj: CXX_COMPILER__coding_Debug C$:\Users\tjgml\clion\Mario_binary_search\7795.cpp || cmake_object_order_depends_target_coding
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  OBJECT_DIR = CMakeFiles\coding.dir
+  OBJECT_FILE_DIR = CMakeFiles\coding.dir
+  TARGET_COMPILE_PDB = CMakeFiles\coding.dir\
+  TARGET_PDB = coding.pdb
+
+build CMakeFiles\coding.dir\2470.cpp.obj: CXX_COMPILER__coding_Debug C$:\Users\tjgml\clion\Mario_binary_search\2470.cpp || cmake_object_order_depends_target_coding
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  OBJECT_DIR = CMakeFiles\coding.dir
+  OBJECT_FILE_DIR = CMakeFiles\coding.dir
+  TARGET_COMPILE_PDB = CMakeFiles\coding.dir\
+  TARGET_PDB = coding.pdb
+
+build CMakeFiles\coding.dir\1764.cpp.obj: CXX_COMPILER__coding_Debug C$:\Users\tjgml\clion\Mario_binary_search\1764.cpp || cmake_object_order_depends_target_coding
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  OBJECT_DIR = CMakeFiles\coding.dir
+  OBJECT_FILE_DIR = CMakeFiles\coding.dir
+  TARGET_COMPILE_PDB = CMakeFiles\coding.dir\
+  TARGET_PDB = coding.pdb
+
+build CMakeFiles\coding.dir\3273.cpp.obj: CXX_COMPILER__coding_Debug C$:\Users\tjgml\clion\Mario_binary_search\3273.cpp || cmake_object_order_depends_target_coding
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  OBJECT_DIR = CMakeFiles\coding.dir
+  OBJECT_FILE_DIR = CMakeFiles\coding.dir
+  TARGET_COMPILE_PDB = CMakeFiles\coding.dir\
+  TARGET_PDB = coding.pdb
+
+build CMakeFiles\coding.dir\13702.cpp.obj: CXX_COMPILER__coding_Debug C$:\Users\tjgml\clion\Mario_binary_search\13702.cpp || cmake_object_order_depends_target_coding
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  OBJECT_DIR = CMakeFiles\coding.dir
+  OBJECT_FILE_DIR = CMakeFiles\coding.dir
+  TARGET_COMPILE_PDB = CMakeFiles\coding.dir\
+  TARGET_PDB = coding.pdb
+
+build CMakeFiles\coding.dir\17266.cpp.obj: CXX_COMPILER__coding_Debug C$:\Users\tjgml\clion\Mario_binary_search\17266.cpp || cmake_object_order_depends_target_coding
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  OBJECT_DIR = CMakeFiles\coding.dir
+  OBJECT_FILE_DIR = CMakeFiles\coding.dir
+  TARGET_COMPILE_PDB = CMakeFiles\coding.dir\
+  TARGET_PDB = coding.pdb
+
+build CMakeFiles\coding.dir\1637.cpp.obj: CXX_COMPILER__coding_Debug C$:\Users\tjgml\clion\Mario_binary_search\1637.cpp || cmake_object_order_depends_target_coding
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++17
+  OBJECT_DIR = CMakeFiles\coding.dir
+  OBJECT_FILE_DIR = CMakeFiles\coding.dir
+  TARGET_COMPILE_PDB = CMakeFiles\coding.dir\
+  TARGET_PDB = coding.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target coding
@@ -323,7 +372,7 @@ build CMakeFiles\coding.dir\7453.cpp.obj: CXX_COMPILER__coding_Debug C$:\Users\t
 #############################################
 # Link the executable coding.exe
 
-build coding.exe: CXX_EXECUTABLE_LINKER__coding_Debug CMakeFiles\coding.dir\2805.cpp.obj CMakeFiles\coding.dir\2343.cpp.obj CMakeFiles\coding.dir\6236.cpp.obj CMakeFiles\coding.dir\1654.cpp.obj CMakeFiles\coding.dir\16434.cpp.obj CMakeFiles\coding.dir\15732.cpp.obj CMakeFiles\coding.dir\1300.cpp.obj CMakeFiles\coding.dir\1920.cpp.obj CMakeFiles\coding.dir\10816.cpp.obj CMakeFiles\coding.dir\1072.cpp.obj CMakeFiles\coding.dir\1114.cpp.obj CMakeFiles\coding.dir\my_1114.cpp.obj CMakeFiles\coding.dir\binary_search.cpp.obj CMakeFiles\coding.dir\18870.cpp.obj CMakeFiles\coding.dir\2295.cpp.obj CMakeFiles\coding.dir\13777.cpp.obj CMakeFiles\coding.dir\1789.cpp.obj CMakeFiles\coding.dir\2417.cpp.obj CMakeFiles\coding.dir\10815.cpp.obj CMakeFiles\coding.dir\2512.cpp.obj CMakeFiles\coding.dir\19637.cpp.obj CMakeFiles\coding.dir\11663.cpp.obj CMakeFiles\coding.dir\3079.cpp.obj CMakeFiles\coding.dir\22871.cpp.obj CMakeFiles\coding.dir\22871_bin_search.cpp.obj CMakeFiles\coding.dir\2110.cpp.obj CMakeFiles\coding.dir\20444.cpp.obj CMakeFiles\coding.dir\1477.cpp.obj CMakeFiles\coding.dir\1939.cpp.obj CMakeFiles\coding.dir\1939_dfs.cpp.obj CMakeFiles\coding.dir\1939_dijkstra.cpp.obj CMakeFiles\coding.dir\2473_bin_search.cpp.obj CMakeFiles\coding.dir\2473_twopointer.cpp.obj CMakeFiles\coding.dir\13397.cpp.obj CMakeFiles\coding.dir\2412.cpp.obj CMakeFiles\coding.dir\my_2412.cpp.obj CMakeFiles\coding.dir\2412_bin_search.cpp.obj CMakeFiles\coding.dir\7453.cpp.obj
+build coding.exe: CXX_EXECUTABLE_LINKER__coding_Debug CMakeFiles\coding.dir\2805.cpp.obj CMakeFiles\coding.dir\2343.cpp.obj CMakeFiles\coding.dir\6236.cpp.obj CMakeFiles\coding.dir\1654.cpp.obj CMakeFiles\coding.dir\16434.cpp.obj CMakeFiles\coding.dir\15732.cpp.obj CMakeFiles\coding.dir\1300.cpp.obj CMakeFiles\coding.dir\1920.cpp.obj CMakeFiles\coding.dir\10816.cpp.obj CMakeFiles\coding.dir\1072.cpp.obj CMakeFiles\coding.dir\1114.cpp.obj CMakeFiles\coding.dir\my_1114.cpp.obj CMakeFiles\coding.dir\binary_search.cpp.obj CMakeFiles\coding.dir\18870.cpp.obj CMakeFiles\coding.dir\2295.cpp.obj CMakeFiles\coding.dir\13777.cpp.obj CMakeFiles\coding.dir\1789.cpp.obj CMakeFiles\coding.dir\2417.cpp.obj CMakeFiles\coding.dir\10815.cpp.obj CMakeFiles\coding.dir\2512.cpp.obj CMakeFiles\coding.dir\19637.cpp.obj CMakeFiles\coding.dir\11663.cpp.obj CMakeFiles\coding.dir\3079.cpp.obj CMakeFiles\coding.dir\22871.cpp.obj CMakeFiles\coding.dir\22871_bin_search.cpp.obj CMakeFiles\coding.dir\2110.cpp.obj CMakeFiles\coding.dir\20444.cpp.obj CMakeFiles\coding.dir\1477.cpp.obj CMakeFiles\coding.dir\1939.cpp.obj CMakeFiles\coding.dir\1939_dfs.cpp.obj CMakeFiles\coding.dir\1939_dijkstra.cpp.obj CMakeFiles\coding.dir\2473_bin_search.cpp.obj CMakeFiles\coding.dir\2473_twopointer.cpp.obj CMakeFiles\coding.dir\13397.cpp.obj CMakeFiles\coding.dir\2412.cpp.obj CMakeFiles\coding.dir\my_2412.cpp.obj CMakeFiles\coding.dir\2412_bin_search.cpp.obj CMakeFiles\coding.dir\7453.cpp.obj CMakeFiles\coding.dir\7795.cpp.obj CMakeFiles\coding.dir\2470.cpp.obj CMakeFiles\coding.dir\1764.cpp.obj CMakeFiles\coding.dir\3273.cpp.obj CMakeFiles\coding.dir\13702.cpp.obj CMakeFiles\coding.dir\17266.cpp.obj CMakeFiles\coding.dir\1637.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -340,7 +389,7 @@ build coding.exe: CXX_EXECUTABLE_LINKER__coding_Debug CMakeFiles\coding.dir\2805
 # Utility command for edit_cache
 
 build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\tjgml\clion\Mario_binary_search\cmake-build-debug && C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\tjgml\clion\Mario_binary_search\cmake-build-debug && C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -351,7 +400,7 @@ build edit_cache: phony CMakeFiles\edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\tjgml\clion\Mario_binary_search\cmake-build-debug && C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe --regenerate-during-build -SC:\Users\tjgml\clion\Mario_binary_search -BC:\Users\tjgml\clion\Mario_binary_search\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\tjgml\clion\Mario_binary_search\cmake-build-debug && C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe --regenerate-during-build -SC:\Users\tjgml\clion\Mario_binary_search -BC:\Users\tjgml\clion\Mario_binary_search\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -380,14 +429,14 @@ build all: phony coding.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\CMakeLists.txt C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeCInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeCXXInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeGenericSystem.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeRCInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.21.1\CMakeCCompiler.cmake CMakeFiles\3.21.1\CMakeCXXCompiler.cmake CMakeFiles\3.21.1\CMakeRCCompiler.cmake CMakeFiles\3.21.1\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\CMakeLists.txt C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeCInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeCXXInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeGenericSystem.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeRCInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.21.1\CMakeCCompiler.cmake CMakeFiles\3.21.1\CMakeCXXCompiler.cmake CMakeFiles\3.21.1\CMakeRCCompiler.cmake CMakeFiles\3.21.1\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\CMakeLists.txt C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeCInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeCXXInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeGenericSystem.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeRCInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.21.1\CMakeCCompiler.cmake CMakeFiles\3.21.1\CMakeCXXCompiler.cmake CMakeFiles\3.21.1\CMakeRCCompiler.cmake CMakeFiles\3.21.1\CMakeSystem.cmake: phony
+build ..\CMakeLists.txt C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeCInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeCXXInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeGenericSystem.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeRCInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Platform\Windows.cmake C$:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.21.1\CMakeCCompiler.cmake CMakeFiles\3.21.1\CMakeCXXCompiler.cmake CMakeFiles\3.21.1\CMakeRCCompiler.cmake CMakeFiles\3.21.1\CMakeSystem.cmake: phony
 
 
 #############################################

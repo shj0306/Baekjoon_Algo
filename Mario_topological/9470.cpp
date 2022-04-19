@@ -2,50 +2,54 @@
 //#define all(x) (x).begin(), (x).end()
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
-//const int MAX = 1001;
-//int indegree[MAX];
+//using pii = pair<int,int>;
+//using ll = long long;
+//int T, K, M, P, indegree[1001], stra[1001], cnt[1001];
+//vector<vector<int>> adj;
+//
 //int main() {
 //    fast_io;
-//    int T, K, M, P; cin >> T;
-//    for (int t = 0; t < T; t++) {
+//    cin >> T;
+//    while(T--) {
 //        cin >> K >> M >> P;
-//        vector<int> adj[MAX];
-//        fill(indegree + 1, indegree + M + 1, 0);
+//        adj = vector<vector<int>> (M+1);
+//        memset(indegree,0,sizeof(indegree));
+//        memset(stra,0,sizeof(stra));
+//
 //        for (int i = 0; i < P; i++) {
-//            int src, des;
-//            cin >> src >> des;
-//            indegree[des]++;
-//            adj[src].push_back(des);
+//            int u, v; cin >> u >> v;
+//            indegree[v]++;
+//            adj[u].push_back(v);
 //        }
 //
-//        queue<pair<int,int>> q;
-//        vector<pair<int,int>> res(M+1, {0,0});
-//
+//        queue<int> q;
 //        for (int i = 1; i <= M; i++) {
-//            if (indegree[i] == 0) q.push({i,1});
-//        }
-//
-//        for (int i = 1; i <= M; i++) {
-//            if (q.empty()) {
-//                cout << "IMPOSSIBLE" << '\n';
-//                return 0;
+//            if (indegree[i] == 0) {
+//                q.push(i);
+//                stra[i] = 1;
 //            }
-//            auto [cur, idx] = q.front();
+//        }
+//
+//        while(!q.empty()) {
+//            int cur = q.front();
 //            q.pop();
-//            if (i == M) {
-//                cout << K << ' ' << idx << '\n';
-//                break;
-//            }
-//            for (auto nxt : adj[cur]) {
-//                if (res[nxt].first < idx) {
-//                    res[nxt].first = idx;
-//                    res[nxt].second = 1;
-//                }else if (res[nxt].first == idx) res[nxt].second++;
+//
+//            for (int nxt : adj[cur]) {
+//                if (stra[nxt] < stra[cur]) {
+//                    stra[nxt] = stra[cur];
+//                    cnt[nxt] = 1;
+//                }else if (stra[nxt] == stra[cur]) cnt[nxt]++;
+//
 //                if (--indegree[nxt] == 0) {
-//                    if (res[nxt].second >= 2) q.push({nxt, res[nxt].first + 1});
-//                    else q.push({nxt, res[nxt].first});
+//                    if (cnt[nxt] > 1) stra[nxt]++;
+//                    q.push(nxt);
 //                }
 //            }
 //        }
+//
+//        int max_stra = 0;
+//        for (int i = 1; i <= M; i++)
+//            max_stra = max(max_stra, stra[i]);
+//        cout << K << ' ' << max_stra << '\n';
 //    }
 //}

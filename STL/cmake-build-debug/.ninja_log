@@ -1,0 +1,15 @@
+# ninja log v5
+12	172	6685055958550221	CMakeFiles/coding.dir/list.cpp.obj	24118c68bdcedd3a
+535	677	6685880494838430	coding.exe	abf67e981622e9a9
+15	462	6685880384483988	CMakeFiles/coding.dir/basic_sort.cpp.obj	71fb0bf813d316dd
+1	444	6685066270811330	CMakeFiles/coding.dir/Vector_stl.cpp.obj	6a1dfd266968ccde
+0	452	6685269011034469	CMakeFiles/coding.dir/Priority_Queue_stl.cpp.obj	f921215992d91335
+10	452	6685269011034469	CMakeFiles/coding.dir/deque_stl.cpp.obj	dd645acd6916b015
+1	535	6685880493589576	CMakeFiles/coding.dir/sad.cpp.obj	30c89303d3512577
+0	487	6686624571866204	CMakeFiles/coding.dir/sad.cpp.obj	30c89303d3512577
+16	969	6686624576688024	CMakeFiles/coding.dir/DFS.cpp.obj	fa9ffd553e9672b1
+970	1251	6686624579140942	coding.exe	5c126f9ab81ce651
+1	710	6686626893444968	CMakeFiles/coding.dir/DFS.cpp.obj	fa9ffd553e9672b1
+711	937	6686626895407010	coding.exe	5c126f9ab81ce651
+0	676	6686627320143303	CMakeFiles/coding.dir/DFS.cpp.obj	fa9ffd553e9672b1
+676	858	6686627321724751	coding.exe	5c126f9ab81ce651

@@ -1,0 +1,3 @@
+C:/Users/tjgml/clion/String/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/tjgml/clion/String/cmake-build-debug/CMakeFiles/String.dir
+C:/Users/tjgml/clion/String/cmake-build-debug/CMakeFiles/rebuild_cache.dir

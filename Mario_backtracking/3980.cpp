@@ -1,43 +1,39 @@
 //#include <bits/stdc++.h>
+//
 //#define all(x) (x).begin(), (x).end()
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
-//using pii = pair<int,int>;
-//#define f first
-//#define s second;
+//using pii = pair<int, int>;
+//using ll = long long;
+//int T, N, arr[12][12], ans, pos[12];
 //
-//vector<vector<pii>> posi;
-//int res;
-//bool checked[12];
-//
-//void solve(int idx, int sum) {
-//
-//    if (idx == 12) {
-//        res = max(res, sum);
+//void back_tracking(int player, int val) {
+//    if (player == 12) {
+//        ans = max(ans, val);
 //        return;
 //    }
-//    for (auto [player, ability] : posi[idx]) {
-//        if (!checked[player]) { //해당 선수가 다른 포지션에 이미 선택된 경우 제외
-//            checked[player] = true;
-//            solve(idx+1, sum + ability);
-//            checked[player] = false;
+//    for (int j = 1; j <= 11; j++) {
+//        if (arr[player][j] && !pos[j]) {
+//            pos[j] = 1;
+//            back_tracking(player + 1, val + arr[player][j]);
+//            pos[j] = 0;
 //        }
 //    }
 //}
 //
 //int main() {
 //    fast_io;
-//    int T; cin >> T;
-//    for (int t = 0; t < T; t++) {
-//        posi = vector<vector<pii>>(12);
-//        res = 0;
+//    cin >> T;
+//    while (T--) {
+//        ans = 0;
+//        memset(pos, 0, sizeof(pos));
 //        for (int i = 1; i <= 11; i++) {
 //            for (int j = 1; j <= 11; j++) {
-//                int num; cin >> num;
-//                if (num) posi[j].emplace_back(i, num);
+//                cin >> arr[i][j];
 //            }
 //        }
-//        solve(1,0);
-//        cout << res << '\n';
+//
+//        back_tracking(1, 0);
+//        cout << ans << '\n';
 //    }
 //}

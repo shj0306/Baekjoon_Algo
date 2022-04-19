@@ -4,38 +4,34 @@
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
 //using pii = pair<int, int>;
-//#define f first
-//#define s second;
+//using ll = long long;
+//int N, M, ans, arr[26][26];
 //
-//int N, M, res;
-//int sqsq[26][26];
-//
-//bool check(int r, int c) {
-//    if (r > 1 && c > 1) return sqsq[r - 1][c] && sqsq[r][c - 1] && sqsq[r - 1][c - 1];
-//    return false;
+//bool is_nemmo(int r, int c) {
+//    return arr[r - 1][c] && arr[r][c - 1] && arr[r - 1][c - 1];
 //}
 //
-//void solve(int row, int col) {
-//    if (row == N+1) {
-//        res++;
+//void back_tracking(int num) {
+//    if (num == N * M) {
+//        ans++;
 //        return;
 //    }
-//    if (col == M+1){
-//        solve(row+1, 1);
-//    }else {
-//        solve(row, col+1);
-//        if (!check(row, col)) {
-//            sqsq[row][col] = 1;
-//            solve(row, col+1);
-//            sqsq[row][col] = 0;
-//        }
+//    int r = num / M + 1;
+//    int c = num % M + 1;
+//    //¾ÈÄ¥ÇÏ°í ´ÙÀ½Ä­À¸·Î
+//    back_tracking(num+1);
+//    // Ä¥ÇßÀ» ¶§ ³Û¸ð³Û¸ð°¡ µÇÁö ¾Ê´Â °æ¿ì¿¡¸¸
+//    if (!is_nemmo(r,c)) {
+//        arr[r][c] = 1;
+//        back_tracking(num+1);
+//        arr[r][c] = 0;
 //    }
 //}
 //
 //int main() {
 //    fast_io;
 //    cin >> N >> M;
-//
-//    solve(1,1);
-//    cout << res << '\n';
+//    back_tracking(0);
+//    cout << ans;
 //}
+////tony9402´Ô ÄÚµå Âü°í

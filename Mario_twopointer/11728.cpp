@@ -1,34 +1,36 @@
 //#include <bits/stdc++.h>
-//
 //#define all(x) (x).begin(), (x).end()
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
-//using pii = pair<int, int>;
+//using pii = pair<int,int>;
 //using ll = long long;
-//int n, m;
-//vector<int> A, B, C;
+//int N, M, num;
 //
 //int main() {
 //    fast_io;
-//    cin >> n >> m;
+//    cin >> N >> M;
+//    vector<int> v1(N), v2(M);
+//    vector<int> res;
 //
-//    A.resize(n);
-//    B.resize(m);
+//    for (int i = 0; i < N; i++) cin >> v1[i];
+//    for (int i = 0; i < M; i++) cin >> v2[i];
 //
-//    for (int i = 0; i < n; i++) cin >> A[i];
-//    for (int i = 0; i < m; i++) cin >> B[i];
-//
-//    int a_idx = 0, b_idx = 0;
-//    while (a_idx < n && b_idx < m) {
-//        if (A[a_idx] <= B[b_idx]) {
-//            C.push_back(A[a_idx++]);
-//            if (a_idx == n) break;
-//        } else {
-//            C.push_back(B[b_idx++]);
-//            if (b_idx == m) break;
-//        }
+//    int l1 = 0, l2 = 0;
+//    while(l1 < N && l2 < M) {
+//        if (v1[l1] <= v2[l2]) res.push_back(v1[l1++]);
+//        else res.push_back(v2[l2++]);
 //    }
-//    for (int i = b_idx; i < m; i++) C.push_back(B[i]);
-//    for (int i = a_idx; i < n; i++) C.push_back(A[i]);
-//    for (auto val: C) cout << val << ' ';
+//
+//    if (l1 < N) {
+//        for (int i = l1; i < N; i++)
+//            res.push_back(v1[i]);
+//    }
+//    if (l2 < M) {
+//        for (int i = l2; i < M; i++)
+//            res.push_back(v2[i]);
+//    }
+//
+//    for (auto val : res) {
+//        cout << val << ' ';
+//    }
 //}

@@ -1,38 +1,36 @@
-/*
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <cstring>
-#define MAX 100000
-using namespace std;
-
-int n;
-int dp[MAX][3]; //dp[i] : i번째 열의 1행/2행/안쓸 때 최대
-vector<vector<int>> sticker;
-int solve(int col, int flag) { //flag : 이전 열에서 어느 행을 선택했나(0?1?)
-    if (col == n) return 0;
-    if (dp[col][flag] != -1) return dp[col][flag];
-    int res = solve(col+1,0);
-    if (flag != 1) res = max(res, sticker[0][col] + solve(col+1,1));
-    if (flag != 2) res = max(res, sticker[1][col] + solve(col+1, 2));
-    dp[col][flag] = res;
-    return res;
-}
-int main() {
-    int t;
-    cin.tie(0)->sync_with_stdio(0);
-    cin >> t;
-    while (t--) {
-        cin >> n;
-        memset(dp, -1, sizeof(dp)); //각 테케마다 초기화
-        sticker = vector<vector<int>>(2, vector<int>(n));
-        for (int i = 0; i < 2; i++) {
-            for (int j = 0; j < n; j++) {
-                cin >> sticker[i][j];
-            }
-        }
-        cout << solve(0, 0) << '\n';
-    }
-    //0 : 선택 안함, 1 : 1행 선택 2 : 2행 선택
-}
-*/
+//#include <bits/stdc++.h>
+//#define all(x) (x).begin(), (x).end()
+//#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+//using namespace std;
+//using pii = pair<int,int>;
+//using ll = long long;
+//const int MAX = 1e5+1;
+//int T,N, sticker[3][MAX], dp[MAX][3];
+//
+//int solve(int idx, int prev) {
+//    if (idx == N+1) return 0;
+//    int &ret = dp[idx][prev];
+//    if (ret != -1) return ret;
+//
+//    ret = solve(idx+1, 0);
+//    if (prev != 1) ret = max(ret, solve(idx+1, 1) + sticker[1][idx]);
+//    if (prev != 2) ret = max(ret, solve(idx+1, 2) + sticker[2][idx]);
+//    return ret;
+//}
+//
+//int main() {
+//    fast_io;
+//    cin >> T;
+//
+//    while(T--) {
+//        cin >> N;
+//        memset(dp, -1, sizeof(dp));
+//        for (int i = 1; i <= 2; i++) {
+//            for (int j = 1; j <= N; j++) {
+//                cin >> sticker[i][j];
+//            }
+//        }
+//
+//        cout << solve(1, 0) << '\n';
+//    }
+//}

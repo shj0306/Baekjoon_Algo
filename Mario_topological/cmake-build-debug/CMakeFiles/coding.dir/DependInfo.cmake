@@ -9,8 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/tjgml/clion/Mario_topological/1005.cpp" "C:/Users/tjgml/clion/Mario_topological/cmake-build-debug/CMakeFiles/coding.dir/1005.cpp.obj"
+  "C:/Users/tjgml/clion/Mario_topological/14676.cpp" "C:/Users/tjgml/clion/Mario_topological/cmake-build-debug/CMakeFiles/coding.dir/14676.cpp.obj"
   "C:/Users/tjgml/clion/Mario_topological/1516.cpp" "C:/Users/tjgml/clion/Mario_topological/cmake-build-debug/CMakeFiles/coding.dir/1516.cpp.obj"
   "C:/Users/tjgml/clion/Mario_topological/1766.cpp" "C:/Users/tjgml/clion/Mario_topological/cmake-build-debug/CMakeFiles/coding.dir/1766.cpp.obj"
+  "C:/Users/tjgml/clion/Mario_topological/2056.cpp" "C:/Users/tjgml/clion/Mario_topological/cmake-build-debug/CMakeFiles/coding.dir/2056.cpp.obj"
   "C:/Users/tjgml/clion/Mario_topological/2252.cpp" "C:/Users/tjgml/clion/Mario_topological/cmake-build-debug/CMakeFiles/coding.dir/2252.cpp.obj"
   "C:/Users/tjgml/clion/Mario_topological/2529.cpp" "C:/Users/tjgml/clion/Mario_topological/cmake-build-debug/CMakeFiles/coding.dir/2529.cpp.obj"
   "C:/Users/tjgml/clion/Mario_topological/2623.cpp" "C:/Users/tjgml/clion/Mario_topological/cmake-build-debug/CMakeFiles/coding.dir/2623.cpp.obj"

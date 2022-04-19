@@ -2,20 +2,24 @@
 //#define all(x) (x).begin(), (x).end()
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
+//using pii = pair<int,int>;
+//using ll = long long;
+//int N, S, arr[20], cnt;
 //
-//int N, S;
-//vector<int> arr;
+//void solve(int idx, int res) {
 //
-//int solve(int idx, int sum, int cnt) {
-//    if (idx == N) return cnt && sum == S;
-//    return solve(idx+1, sum, cnt) + solve(idx+1, sum+arr[idx], cnt + 1);
+//    if (idx == N) return;
+//    if (res + arr[idx] == S) cnt++;
+//
+//    solve(idx+1, res);
+//    solve(idx+1, res + arr[idx]);
 //}
 //
 //int main() {
 //    fast_io;
 //    cin >> N >> S;
-//    arr = vector<int>(N);
 //    for (int i = 0; i < N; i++) cin >> arr[i];
-//    sort(all(arr));
-//    cout << solve(0, 0, 0) << '\n';
+//    sort(begin(arr),begin(arr)+N);
+//    solve(0, 0);
+//    cout << cnt;
 //}

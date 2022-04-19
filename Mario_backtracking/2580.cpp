@@ -1,62 +1,60 @@
 //#include <bits/stdc++.h>
-//
 //#define all(x) (x).begin(), (x).end()
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
-//using pii = pair<int, int>;
-//#define f first
-//#define s second;
-//
-//int sudoku[10][10], N;
+//using pii = pair<int,int>;
+//using ll = long long;
+//int N, sudoku[10][10];
 //vector<pii> blank;
 //
-//bool is_possible(int r, int c, int num) {
+//bool is_promising(int num, int idx) {
+//    auto [r, c] = blank[idx];
 //
-//    int row = (r-1) / 3, col = (c-1) / 3;
-//    for (int i = 1; i <= 9; i++) {
-//        if (sudoku[r][i] == num) return false;
-//        if (sudoku[i][c] == num) return false;
-//        for (int ii = row * 3; ii < row * 3 + 3; ii++) {
-//            for (int jj = col * 3; jj < col * 3 + 3; jj++) {
-//                if (sudoku[ii+1][jj+1] == num) return false;
-//            }
+//    for (int i = 0; i < 9; i++) {
+//        if (sudoku[r][i] == num || sudoku[i][c] == num) return false;
+//    }
+//    int r2 = (r / 3) * 3, c2 = (c / 3) * 3;
+//
+//    for (int i = r2; i < r2 + 3; i++) {
+//        for (int j = c2; j < c2 + 3; j++) {
+//            if (sudoku[i][j] == num) return false;
 //        }
 //    }
 //    return true;
 //}
 //
-//void solve(int idx) {
-//    if (idx == N) { //모든 빈칸을 채운 다면
-//        for (int i = 1; i <= 9; i++) {
-//            for (int j = 1; j <= 9; j++) {
+//void back_tracking(int idx) {
+//
+//    if (idx == N) {
+//        for (int i = 0; i < 9; i++) {
+//            for (int j = 0; j < 9; j++) {
 //                cout << sudoku[i][j] << ' ';
 //            }
 //            cout << '\n';
 //        }
-//        exit(0); //출력 후 바로 종료
+//        exit(0);
 //    }
-//
-//    auto [r, c] = blank[idx];
 //
 //    for (int i = 1; i <= 9; i++) {
-//        if (is_possible(r, c, i)) {
+//        if (is_promising(i, idx)) {
+//            auto [r,c] = blank[idx];
 //            sudoku[r][c] = i;
-//            solve(idx+1);
+//            back_tracking(idx+1);
+//            sudoku[r][c] = 0;
 //        }
 //    }
-//    sudoku[r][c] = 0;
 //}
 //
 //int main() {
-//    cin.tie(0)->sync_with_stdio(0);
-//    for (int i = 1; i <= 9; i++) {
-//        for (int j = 1; j <= 9; j++) {
+//    fast_io;
+//
+//    for (int i = 0; i < 9; i++) {
+//        for (int j = 0; j < 9; j++) {
 //            cin >> sudoku[i][j];
-//            if (sudoku[i][j] == 0) {
-//                N++;
-//                blank.emplace_back(i, j);
-//            }
+//            if (sudoku[i][j] == 0)
+//                blank.emplace_back(i,j);
 //        }
 //    }
-//    solve(0);
+//    N = (int)blank.size();
+//    back_tracking(0);
 //}

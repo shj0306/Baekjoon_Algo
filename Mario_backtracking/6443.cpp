@@ -3,30 +3,38 @@
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
 //using pii = pair<int,int>;
-//#define f first
-//#define s second;
+//using ll = long long;
 //
-//int N; string tmp;
-//vector<string> vec;
-//set<string> memory;
+//struct CMP {
+//    bool operator() (const string& a, const string& b) const {
+//        if (a.size() == b.size()) return a < b;
+//        else return a.size() < b.size();
+//    }
+//};
+//
+//int N;
 //bool check[20];
+//string word, tmp;
+//set<string, CMP> res;
 //
-//void solve(int idx, const string& word) {
+//void back_tracking(int cnt) {
 //
-//    if (idx == word.length()) {
-//        memory.insert(tmp);
+//    if (cnt == word.length()) {
+//        res.insert(tmp);
 //        return;
 //    }
 //
-//    char prev = '#';
+//    char prev = '@';
 //    for (int i = 0; i < word.length(); i++) {
-//        if (!check[i] && prev != word[i]) {
-//            check[i] = true;
-//            prev = word[i];
-//            tmp += word[i];
-//            solve(idx+1, word);
-//            tmp.pop_back();
-//            check[i] = false;
+//        if (!check[i]) {
+//            if (prev != word[i]) {
+//                prev = word[i];
+//                check[i] = true;
+//                tmp.push_back(word[i]);
+//                back_tracking(cnt+1);
+//                check[i] = false;
+//                tmp.pop_back();
+//            }
 //        }
 //    }
 //}
@@ -34,16 +42,14 @@
 //int main() {
 //    fast_io;
 //    cin >> N;
+//
 //    for (int i = 0; i < N; i++) {
-//        string word; cin >> word;
-//        vec.push_back(word);
+//        cin >> word;
+//        memset(check,false,sizeof(check));
+//        back_tracking(0);
 //    }
 //
-//    for (const auto& word : vec) {
-//        solve(0, word);
-//        for (auto it = memory.begin(); it != memory.end(); it++)
-//            cout << *it << '\n';
-//        memory.clear();
+//    for (auto it = res.begin(); it != res.end(); it++) {
+//        cout << *it << '\n';
 //    }
-//    double end = (double)clock() / CLOCKS_PER_SEC;
 //}

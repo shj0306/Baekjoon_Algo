@@ -1,0 +1,35 @@
+//#include <bits/stdc++.h>
+//
+//#define all(x) (x).begin(), (x).end()
+//#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+//using namespace std;
+//using pii = pair<int, int>;
+//using ll = long long;
+//int N, M, arr[8];
+//vector<int> tmp;
+//
+//void back_tracking(int idx, int cnt) {
+//    if (cnt == M) {
+//        for (auto val: tmp) {
+//            cout << val << ' ';
+//        }
+//        cout << '\n';
+//        return;
+//    }
+//
+//    for (int i = idx; i < N; i++) {
+//        tmp.push_back(arr[i]);
+//        back_tracking(i, cnt + 1);
+//        tmp.pop_back();
+//    }
+//}
+//
+//int main() {
+//    fast_io;
+//    cin >> N >> M;
+//
+//    for (int i = 0; i < N; i++) cin >> arr[i];
+//
+//    sort(arr, arr + N);
+//    back_tracking(0,0);
+//}

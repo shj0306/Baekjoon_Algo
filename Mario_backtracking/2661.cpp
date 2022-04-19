@@ -3,35 +3,35 @@
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
 //using pii = pair<int,int>;
-//#define f first
-//#define s second;
-//
+//using ll = long long;
 //int N;
-//string str1;
 //
-//bool is_possible(const string& str) {
-//    if (str.length() == 1) return true;
-//    int sz = (int)str.length();
-//
-//    for (int i = 1; i <= sz/2; i++) {
-//        if (str.substr(sz-i, i) == str.substr(sz-2*i, i)) return false;
+//bool is_promising(const string& num) {
+//    string tmp1, tmp2;
+//    if (num.length() == 1) return true;
+//    for (int i = (int)(num.length()+1) / 2; i < num.length(); i++) {
+//        tmp1 = num.substr(i);
+//        tmp2 = num.substr(i - tmp1.length(), tmp1.length());
+//        if (tmp1 == tmp2) return false;
 //    }
 //    return true;
 //}
 //
-//void solve(int idx, const string& cur) { //현재 채워야할 자릿수, 현재까지 채워진 문자열
+//void back_tracking(int idx, const string& num) {
 //    if (idx == N) {
-//        cout << cur;
+//        for (auto c : num) cout << c;
 //        exit(0);
 //    }
+//
 //    for (char i = '1'; i <= '3'; i++) {
-//        if (is_possible(cur+i)) {
-//            solve(idx+1, cur+i);
+//        if (is_promising(num+i)) {
+//            back_tracking(idx+1, num+i);
 //        }
 //    }
 //}
+//
 //int main() {
 //    fast_io;
 //    cin >> N;
-//    solve(0, str1);
+//    back_tracking(0, "");
 //}

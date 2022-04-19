@@ -5,7 +5,6 @@
 //// col[y][i] = y열에 i숫자가 있는 지
 //// square[z][i] = z칸에 i숫자가 있는 지
 //
-//
 //int row[9][10], col[9][10], square[9][10];
 //int sudoku[9][9];
 //vector<pair<int, int>> zero;
@@ -27,14 +26,10 @@
 //    for (int num = 1; num <= 9; num++) {
 //        int sq = (r / 3) * 3 + c / 3;
 //        if (!row[r][num] && !col[c][num] && !square[sq][num]) {
-//            row[r][num] = 1;
-//            col[c][num] = 1;
-//            square[sq][num] = 1;
+//            row[r][num] = 1; col[c][num] = 1; square[sq][num] = 1;
 //            sudoku[r][c] = num;
 //            back_tracking(idx + 1);
-//            row[r][num] = 0;
-//            col[c][num] = 0;
-//            square[sq][num] = 0;
+//            row[r][num] = 0; col[c][num] = 0; square[sq][num] = 0;
 //            sudoku[r][c] = 0;
 //        }
 //    }

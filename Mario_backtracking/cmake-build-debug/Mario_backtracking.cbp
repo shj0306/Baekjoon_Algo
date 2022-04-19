@@ -84,13 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/1038.cpp">
+			<Option target="coding"/>
+		</Unit>
 		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/10597.cpp">
 			<Option target="coding"/>
 		</Unit>
 		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/1062.cpp">
 			<Option target="coding"/>
 		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/1062_bit.cpp">
+			<Option target="coding"/>
+		</Unit>
 		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/10971.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/10974.cpp">
 			<Option target="coding"/>
 		</Unit>
 		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/1174.cpp">
@@ -117,6 +126,30 @@
 		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/14888.cpp">
 			<Option target="coding"/>
 		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/15654.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/15655.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/15656.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/15657.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/15664.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/15665.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/15666.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/16922.cpp">
+			<Option target="coding"/>
+		</Unit>
 		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/16987.cpp">
 			<Option target="coding"/>
 		</Unit>
@@ -129,10 +162,22 @@
 		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/1799.cpp">
 			<Option target="coding"/>
 		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/18429.cpp">
+			<Option target="coding"/>
+		</Unit>
 		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/18430.cpp">
 			<Option target="coding"/>
 		</Unit>
 		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/1987.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/19942.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/19949.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/2023.cpp">
 			<Option target="coding"/>
 		</Unit>
 		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/22944.cpp">
@@ -151,6 +196,12 @@
 			<Option target="coding"/>
 		</Unit>
 		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/6443.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/6987.cpp">
+			<Option target="coding"/>
+		</Unit>
+		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/7490.cpp">
 			<Option target="coding"/>
 		</Unit>
 		<Unit filename="C:/Users/tjgml/clion/Mario_backtracking/9663.cpp">

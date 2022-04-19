@@ -34,10 +34,10 @@ NULL=nul
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -70,12 +70,12 @@ clean: CMakeFiles\coding.dir\clean
 CMakeFiles\coding.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target coding"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43 "Built target coding"
 .PHONY : CMakeFiles\coding.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\coding.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\coding.dir\rule

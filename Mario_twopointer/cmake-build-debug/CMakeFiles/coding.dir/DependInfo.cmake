@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/tjgml/clion/Mario_twopointer/11728.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/11728.cpp.obj"
   "C:/Users/tjgml/clion/Mario_twopointer/1484.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/1484.cpp.obj"
+  "C:/Users/tjgml/clion/Mario_twopointer/15565.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/15565.cpp.obj"
   "C:/Users/tjgml/clion/Mario_twopointer/15961.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/15961.cpp.obj"
   "C:/Users/tjgml/clion/Mario_twopointer/1644.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/1644.cpp.obj"
   "C:/Users/tjgml/clion/Mario_twopointer/1806.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/1806.cpp.obj"
@@ -27,7 +28,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/tjgml/clion/Mario_twopointer/2293.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/2293.cpp.obj"
   "C:/Users/tjgml/clion/Mario_twopointer/22945.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/22945.cpp.obj"
   "C:/Users/tjgml/clion/Mario_twopointer/2470.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/2470.cpp.obj"
+  "C:/Users/tjgml/clion/Mario_twopointer/2473.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/2473.cpp.obj"
   "C:/Users/tjgml/clion/Mario_twopointer/2531.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/2531.cpp.obj"
+  "C:/Users/tjgml/clion/Mario_twopointer/2559.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/2559.cpp.obj"
   "C:/Users/tjgml/clion/Mario_twopointer/3151.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/3151.cpp.obj"
   "C:/Users/tjgml/clion/Mario_twopointer/3151_bin.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/3151_bin.cpp.obj"
   "C:/Users/tjgml/clion/Mario_twopointer/7453.cpp" "C:/Users/tjgml/clion/Mario_twopointer/cmake-build-debug/CMakeFiles/coding.dir/7453.cpp.obj"

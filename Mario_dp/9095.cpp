@@ -3,28 +3,21 @@
 //#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 //using namespace std;
 //using pii = pair<int,int>;
-//#define f first
-//#define s second;
-//
-//int n,dp[11];
-//
-//int solve(int num) {
-//    if (num == 0) return 1;
-//    int &ret = dp[num];
-//    if (ret != 0) return ret;
-//
-//    ret += solve(num-1);
-//    if (num >= 2) ret += solve(num-2);
-//    if (num >= 3) ret += solve(num-3);
-//    return ret;
-//}
+//using ll = long long;
+//int T, n, dp[11];
 //
 //int main() {
 //    fast_io;
-//    int t; cin >> t;
-//    while(t--) {
+//    cin >> T;
+//    while(T--) {
 //        cin >> n;
-//        memset(dp,0,sizeof(dp));
-//        cout << solve(n) << '\n';
+//        memset(dp, 0, sizeof(dp));
+//
+//        dp[1] = 1; dp[2] = 2; dp[3] = 4;
+//
+//        for (int num = 4; num <= n; num++) {
+//            dp[num] = dp[num-1] + dp[num-2] + dp[num-3];
+//        }
+//        cout << dp[n] << '\n';
 //    }
 //}

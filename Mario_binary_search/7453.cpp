@@ -10,7 +10,6 @@
 //bitset<(1<<30)+1> isExist;
 //unordered_map<int,int> sumCount;
 //
-////unordered_map에 값을 넣는 시간이 오래 걸린다.
 //
 //void add(int num) {
 //    if (!isExist[num + BASE]) isExist[num + BASE] = true;

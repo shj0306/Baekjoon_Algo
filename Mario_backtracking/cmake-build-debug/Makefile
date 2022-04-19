@@ -37,10 +37,10 @@ NULL=nul
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -57,7 +57,7 @@ CMAKE_BINARY_DIR = C:\Users\tjgml\clion\Mario_backtracking\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -67,7 +67,7 @@ edit_cache\fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.6777.58\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -118,6 +118,30 @@ coding\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\build
 .PHONY : coding\fast
 
+1038.obj: 1038.cpp.obj
+.PHONY : 1038.obj
+
+# target to build an object file
+1038.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\1038.cpp.obj
+.PHONY : 1038.cpp.obj
+
+1038.i: 1038.cpp.i
+.PHONY : 1038.i
+
+# target to preprocess a source file
+1038.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\1038.cpp.i
+.PHONY : 1038.cpp.i
+
+1038.s: 1038.cpp.s
+.PHONY : 1038.s
+
+# target to generate assembly for a file
+1038.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\1038.cpp.s
+.PHONY : 1038.cpp.s
+
 10597.obj: 10597.cpp.obj
 .PHONY : 10597.obj
 
@@ -166,6 +190,30 @@ coding\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\1062.cpp.s
 .PHONY : 1062.cpp.s
 
+1062_bit.obj: 1062_bit.cpp.obj
+.PHONY : 1062_bit.obj
+
+# target to build an object file
+1062_bit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\1062_bit.cpp.obj
+.PHONY : 1062_bit.cpp.obj
+
+1062_bit.i: 1062_bit.cpp.i
+.PHONY : 1062_bit.i
+
+# target to preprocess a source file
+1062_bit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\1062_bit.cpp.i
+.PHONY : 1062_bit.cpp.i
+
+1062_bit.s: 1062_bit.cpp.s
+.PHONY : 1062_bit.s
+
+# target to generate assembly for a file
+1062_bit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\1062_bit.cpp.s
+.PHONY : 1062_bit.cpp.s
+
 10971.obj: 10971.cpp.obj
 .PHONY : 10971.obj
 
@@ -189,6 +237,30 @@ coding\fast:
 10971.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\10971.cpp.s
 .PHONY : 10971.cpp.s
+
+10974.obj: 10974.cpp.obj
+.PHONY : 10974.obj
+
+# target to build an object file
+10974.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\10974.cpp.obj
+.PHONY : 10974.cpp.obj
+
+10974.i: 10974.cpp.i
+.PHONY : 10974.i
+
+# target to preprocess a source file
+10974.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\10974.cpp.i
+.PHONY : 10974.cpp.i
+
+10974.s: 10974.cpp.s
+.PHONY : 10974.s
+
+# target to generate assembly for a file
+10974.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\10974.cpp.s
+.PHONY : 10974.cpp.s
 
 1174.obj: 1174.cpp.obj
 .PHONY : 1174.obj
@@ -382,6 +454,198 @@ coding\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\14888.cpp.s
 .PHONY : 14888.cpp.s
 
+15654.obj: 15654.cpp.obj
+.PHONY : 15654.obj
+
+# target to build an object file
+15654.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15654.cpp.obj
+.PHONY : 15654.cpp.obj
+
+15654.i: 15654.cpp.i
+.PHONY : 15654.i
+
+# target to preprocess a source file
+15654.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15654.cpp.i
+.PHONY : 15654.cpp.i
+
+15654.s: 15654.cpp.s
+.PHONY : 15654.s
+
+# target to generate assembly for a file
+15654.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15654.cpp.s
+.PHONY : 15654.cpp.s
+
+15655.obj: 15655.cpp.obj
+.PHONY : 15655.obj
+
+# target to build an object file
+15655.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15655.cpp.obj
+.PHONY : 15655.cpp.obj
+
+15655.i: 15655.cpp.i
+.PHONY : 15655.i
+
+# target to preprocess a source file
+15655.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15655.cpp.i
+.PHONY : 15655.cpp.i
+
+15655.s: 15655.cpp.s
+.PHONY : 15655.s
+
+# target to generate assembly for a file
+15655.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15655.cpp.s
+.PHONY : 15655.cpp.s
+
+15656.obj: 15656.cpp.obj
+.PHONY : 15656.obj
+
+# target to build an object file
+15656.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15656.cpp.obj
+.PHONY : 15656.cpp.obj
+
+15656.i: 15656.cpp.i
+.PHONY : 15656.i
+
+# target to preprocess a source file
+15656.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15656.cpp.i
+.PHONY : 15656.cpp.i
+
+15656.s: 15656.cpp.s
+.PHONY : 15656.s
+
+# target to generate assembly for a file
+15656.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15656.cpp.s
+.PHONY : 15656.cpp.s
+
+15657.obj: 15657.cpp.obj
+.PHONY : 15657.obj
+
+# target to build an object file
+15657.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15657.cpp.obj
+.PHONY : 15657.cpp.obj
+
+15657.i: 15657.cpp.i
+.PHONY : 15657.i
+
+# target to preprocess a source file
+15657.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15657.cpp.i
+.PHONY : 15657.cpp.i
+
+15657.s: 15657.cpp.s
+.PHONY : 15657.s
+
+# target to generate assembly for a file
+15657.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15657.cpp.s
+.PHONY : 15657.cpp.s
+
+15664.obj: 15664.cpp.obj
+.PHONY : 15664.obj
+
+# target to build an object file
+15664.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15664.cpp.obj
+.PHONY : 15664.cpp.obj
+
+15664.i: 15664.cpp.i
+.PHONY : 15664.i
+
+# target to preprocess a source file
+15664.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15664.cpp.i
+.PHONY : 15664.cpp.i
+
+15664.s: 15664.cpp.s
+.PHONY : 15664.s
+
+# target to generate assembly for a file
+15664.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15664.cpp.s
+.PHONY : 15664.cpp.s
+
+15665.obj: 15665.cpp.obj
+.PHONY : 15665.obj
+
+# target to build an object file
+15665.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15665.cpp.obj
+.PHONY : 15665.cpp.obj
+
+15665.i: 15665.cpp.i
+.PHONY : 15665.i
+
+# target to preprocess a source file
+15665.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15665.cpp.i
+.PHONY : 15665.cpp.i
+
+15665.s: 15665.cpp.s
+.PHONY : 15665.s
+
+# target to generate assembly for a file
+15665.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15665.cpp.s
+.PHONY : 15665.cpp.s
+
+15666.obj: 15666.cpp.obj
+.PHONY : 15666.obj
+
+# target to build an object file
+15666.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15666.cpp.obj
+.PHONY : 15666.cpp.obj
+
+15666.i: 15666.cpp.i
+.PHONY : 15666.i
+
+# target to preprocess a source file
+15666.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15666.cpp.i
+.PHONY : 15666.cpp.i
+
+15666.s: 15666.cpp.s
+.PHONY : 15666.s
+
+# target to generate assembly for a file
+15666.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\15666.cpp.s
+.PHONY : 15666.cpp.s
+
+16922.obj: 16922.cpp.obj
+.PHONY : 16922.obj
+
+# target to build an object file
+16922.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\16922.cpp.obj
+.PHONY : 16922.cpp.obj
+
+16922.i: 16922.cpp.i
+.PHONY : 16922.i
+
+# target to preprocess a source file
+16922.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\16922.cpp.i
+.PHONY : 16922.cpp.i
+
+16922.s: 16922.cpp.s
+.PHONY : 16922.s
+
+# target to generate assembly for a file
+16922.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\16922.cpp.s
+.PHONY : 16922.cpp.s
+
 16987.obj: 16987.cpp.obj
 .PHONY : 16987.obj
 
@@ -478,6 +742,30 @@ coding\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\1799.cpp.s
 .PHONY : 1799.cpp.s
 
+18429.obj: 18429.cpp.obj
+.PHONY : 18429.obj
+
+# target to build an object file
+18429.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\18429.cpp.obj
+.PHONY : 18429.cpp.obj
+
+18429.i: 18429.cpp.i
+.PHONY : 18429.i
+
+# target to preprocess a source file
+18429.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\18429.cpp.i
+.PHONY : 18429.cpp.i
+
+18429.s: 18429.cpp.s
+.PHONY : 18429.s
+
+# target to generate assembly for a file
+18429.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\18429.cpp.s
+.PHONY : 18429.cpp.s
+
 18430.obj: 18430.cpp.obj
 .PHONY : 18430.obj
 
@@ -525,6 +813,78 @@ coding\fast:
 1987.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\1987.cpp.s
 .PHONY : 1987.cpp.s
+
+19942.obj: 19942.cpp.obj
+.PHONY : 19942.obj
+
+# target to build an object file
+19942.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\19942.cpp.obj
+.PHONY : 19942.cpp.obj
+
+19942.i: 19942.cpp.i
+.PHONY : 19942.i
+
+# target to preprocess a source file
+19942.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\19942.cpp.i
+.PHONY : 19942.cpp.i
+
+19942.s: 19942.cpp.s
+.PHONY : 19942.s
+
+# target to generate assembly for a file
+19942.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\19942.cpp.s
+.PHONY : 19942.cpp.s
+
+19949.obj: 19949.cpp.obj
+.PHONY : 19949.obj
+
+# target to build an object file
+19949.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\19949.cpp.obj
+.PHONY : 19949.cpp.obj
+
+19949.i: 19949.cpp.i
+.PHONY : 19949.i
+
+# target to preprocess a source file
+19949.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\19949.cpp.i
+.PHONY : 19949.cpp.i
+
+19949.s: 19949.cpp.s
+.PHONY : 19949.s
+
+# target to generate assembly for a file
+19949.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\19949.cpp.s
+.PHONY : 19949.cpp.s
+
+2023.obj: 2023.cpp.obj
+.PHONY : 2023.obj
+
+# target to build an object file
+2023.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\2023.cpp.obj
+.PHONY : 2023.cpp.obj
+
+2023.i: 2023.cpp.i
+.PHONY : 2023.i
+
+# target to preprocess a source file
+2023.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\2023.cpp.i
+.PHONY : 2023.cpp.i
+
+2023.s: 2023.cpp.s
+.PHONY : 2023.s
+
+# target to generate assembly for a file
+2023.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\2023.cpp.s
+.PHONY : 2023.cpp.s
 
 22944.obj: 22944.cpp.obj
 .PHONY : 22944.obj
@@ -670,6 +1030,54 @@ coding\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\6443.cpp.s
 .PHONY : 6443.cpp.s
 
+6987.obj: 6987.cpp.obj
+.PHONY : 6987.obj
+
+# target to build an object file
+6987.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\6987.cpp.obj
+.PHONY : 6987.cpp.obj
+
+6987.i: 6987.cpp.i
+.PHONY : 6987.i
+
+# target to preprocess a source file
+6987.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\6987.cpp.i
+.PHONY : 6987.cpp.i
+
+6987.s: 6987.cpp.s
+.PHONY : 6987.s
+
+# target to generate assembly for a file
+6987.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\6987.cpp.s
+.PHONY : 6987.cpp.s
+
+7490.obj: 7490.cpp.obj
+.PHONY : 7490.obj
+
+# target to build an object file
+7490.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\7490.cpp.obj
+.PHONY : 7490.cpp.obj
+
+7490.i: 7490.cpp.i
+.PHONY : 7490.i
+
+# target to preprocess a source file
+7490.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\7490.cpp.i
+.PHONY : 7490.cpp.i
+
+7490.s: 7490.cpp.s
+.PHONY : 7490.s
+
+# target to generate assembly for a file
+7490.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\coding.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\coding.dir\7490.cpp.s
+.PHONY : 7490.cpp.s
+
 9663.obj: 9663.cpp.obj
 .PHONY : 9663.obj
 
@@ -727,15 +1135,24 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... coding
+	@echo ... 1038.obj
+	@echo ... 1038.i
+	@echo ... 1038.s
 	@echo ... 10597.obj
 	@echo ... 10597.i
 	@echo ... 10597.s
 	@echo ... 1062.obj
 	@echo ... 1062.i
 	@echo ... 1062.s
+	@echo ... 1062_bit.obj
+	@echo ... 1062_bit.i
+	@echo ... 1062_bit.s
 	@echo ... 10971.obj
 	@echo ... 10971.i
 	@echo ... 10971.s
+	@echo ... 10974.obj
+	@echo ... 10974.i
+	@echo ... 10974.s
 	@echo ... 1174.obj
 	@echo ... 1174.i
 	@echo ... 1174.s
@@ -760,6 +1177,30 @@ help:
 	@echo ... 14888.obj
 	@echo ... 14888.i
 	@echo ... 14888.s
+	@echo ... 15654.obj
+	@echo ... 15654.i
+	@echo ... 15654.s
+	@echo ... 15655.obj
+	@echo ... 15655.i
+	@echo ... 15655.s
+	@echo ... 15656.obj
+	@echo ... 15656.i
+	@echo ... 15656.s
+	@echo ... 15657.obj
+	@echo ... 15657.i
+	@echo ... 15657.s
+	@echo ... 15664.obj
+	@echo ... 15664.i
+	@echo ... 15664.s
+	@echo ... 15665.obj
+	@echo ... 15665.i
+	@echo ... 15665.s
+	@echo ... 15666.obj
+	@echo ... 15666.i
+	@echo ... 15666.s
+	@echo ... 16922.obj
+	@echo ... 16922.i
+	@echo ... 16922.s
 	@echo ... 16987.obj
 	@echo ... 16987.i
 	@echo ... 16987.s
@@ -772,12 +1213,24 @@ help:
 	@echo ... 1799.obj
 	@echo ... 1799.i
 	@echo ... 1799.s
+	@echo ... 18429.obj
+	@echo ... 18429.i
+	@echo ... 18429.s
 	@echo ... 18430.obj
 	@echo ... 18430.i
 	@echo ... 18430.s
 	@echo ... 1987.obj
 	@echo ... 1987.i
 	@echo ... 1987.s
+	@echo ... 19942.obj
+	@echo ... 19942.i
+	@echo ... 19942.s
+	@echo ... 19949.obj
+	@echo ... 19949.i
+	@echo ... 19949.s
+	@echo ... 2023.obj
+	@echo ... 2023.i
+	@echo ... 2023.s
 	@echo ... 22944.obj
 	@echo ... 22944.i
 	@echo ... 22944.s
@@ -796,6 +1249,12 @@ help:
 	@echo ... 6443.obj
 	@echo ... 6443.i
 	@echo ... 6443.s
+	@echo ... 6987.obj
+	@echo ... 6987.i
+	@echo ... 6987.s
+	@echo ... 7490.obj
+	@echo ... 7490.i
+	@echo ... 7490.s
 	@echo ... 9663.obj
 	@echo ... 9663.i
 	@echo ... 9663.s
