@@ -1,55 +1,68 @@
-//#include <bits/stdc++.h>
-//#define all(x) (x).begin(), (x).end()
-//#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
-//using namespace std;
-//using pii = pair<int,int>;
-//const int MAX = 100001;
-//int N, M, max_cost;
-//int fac_1, fac_2;
-//vector<vector<pii>> bridge;
-//bool visited[MAX];
-//
-//bool possible(int weight) {
-//    queue<int> q;
-//    q.push(fac_1);
-//    visited[fac_1] = true;
-//    while(!q.empty()) {
-//        int cur = q.front();
-//        q.pop();
-//        if (cur == fac_2) return true;
-//        for (auto [nxt, w] : bridge[cur]) {
-//            if (!visited[nxt] && weight <= w) {
-//                visited[nxt] = true;
-//                q.push(nxt);
-//            }
-//        }
-//    }
-//    return false;
-//}
-//
-//int main() {
-//    fast_io;
-//    cin >> N >> M;
-//    bridge = vector<vector<pii>> (N+1);
-//    for (int i = 0; i < M; i++) {
-//        int a,b,c;
-//        cin >> a >> b >> c; //aì„¬ê³¼ bì„¬ ì‚¬ì´ ì¤‘ëŸ‰ì œí•œ cì¸ ë‹¤ë¦¬
-//        bridge[a].emplace_back(b,c);
-//        bridge[b].emplace_back(a,c);
-//        max_cost = max(max_cost, c);
-//    }
-//
-//    cin >> fac_1 >> fac_2;
-//
-//    int lo = 1, hi = max_cost, ans = 1;
-//    while(lo <= hi) {
-//        int mid = (lo+hi) / 2; //ë¬¼í’ˆ ì¤‘ëŸ‰
-//        memset(visited, false, sizeof(visited));
-//        if (possible(mid)) {
-//            ans = max(ans, mid);
-//            lo = mid + 1;
-//        }else hi = mid - 1;
-//    }
-//    cout << ans;
-//}
-//// bfs + binary_search
+#include <bits/stdc++.h>
+#define all(x) (x).begin(), (x).end()
+#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+using namespace std;
+using pii = pair<int,int>;
+using ll = long long;
+const int MAX = 10001;
+int N, M, a,b,c, S,E;
+int visited[MAX];
+vector<vector<pii>> adj;
+
+//ÇØ´ç Áß·®ÀÇ ¹°Ç°À» ¿Å±æ ¼ö ÀÖ´Â Áö?
+bool possible(int weight) {
+    queue<int> q;
+    memset(visited, 0, sizeof(visited));
+    q.push(S);
+    visited[S] = 1;
+
+    while(!q.empty()) {
+        int cur = q.front();
+        q.pop();
+
+        if (cur == E) return true;
+
+        for (auto [w, nxt] : adj[cur]) {
+            if (weight > w) break;
+            if (!visited[nxt]) {
+                visited[nxt] = 1;
+                q.push(nxt);
+            }
+        }
+    }
+    return false;
+}
+
+int main() {
+    fast_io;
+    cin >> N >> M;
+    adj.resize(N+1);
+
+    for (int i = 0; i < M; i++) {
+        cin >> a >> b >> c;
+        adj[a].emplace_back(c,b);
+        adj[b].emplace_back(c,a);
+    }
+
+    //°¢ ¼¶¿¡ ¿¬°áµÈ µµ·Î¸¦ Áß·®Á¦ÇÑ ±âÁØÀ¸·Î ³»¸²Â÷¼ø Á¤·Ä
+    for (int i = 1; i <= N; i++) sort(all(adj[i]), greater<>());
+
+    //°øÀå ¹øÈ£ ÀÔ·Â ¹Þ´Â´Ù.
+    cin >> S >> E;
+
+    int l = 1, r = 1e9, mid, ans = 0;
+    while(l <= r) {
+
+        //¿Å±â·Á°í ÇÏ´Â ¹°Ç° Áß·®
+        mid = (l + r) / 2;
+
+        //ÇØ´ç ¹°Ç°À» S->E·Î ¿Å±æ ¼ö ÀÖ´Â Áö?
+        if (possible(mid)) {
+            ans = mid;
+            l = mid + 1;
+        }else {
+            r = mid - 1;
+        }
+    }
+    cout << ans;
+}
