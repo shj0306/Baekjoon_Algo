@@ -1,3 +1,0 @@
-C:/Users/tjgml/clion/Mario_union_find/cmake-build-debug/CMakeFiles/coding.dir
-C:/Users/tjgml/clion/Mario_union_find/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/tjgml/clion/Mario_union_find/cmake-build-debug/CMakeFiles/rebuild_cache.dir

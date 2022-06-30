@@ -1,3 +1,0 @@
-C:/Users/tjgml/clion/codeforce/cmake-build-debug/CMakeFiles/codeforce.dir
-C:/Users/tjgml/clion/codeforce/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/tjgml/clion/codeforce/cmake-build-debug/CMakeFiles/rebuild_cache.dir
