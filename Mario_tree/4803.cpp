@@ -1,55 +1,52 @@
-/*
 #include <bits/stdc++.h>
 #define all(x) (x).begin(), (x).end()
 #define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 using namespace std;
+using pii = pair<int,int>;
+using ll = long long;
+const int MAX = 501;
+int N, M, u, v, P[MAX];
+vector<int> treeSet;
+//https://loosie.tistory.com/460
+//입력받으면서 하지말고 전부 유니온파인트를 수행한다음 연산을 수행한다.
 
-int n, m;
-vector<vector<int>> graph;
-int edge, vertex = 1, visited[501];
+int find(int r) {
+    if (r == P[r]) return r;
+    return P[r] = find(P[r]);
+}
 
-void find_tree(int root) {
-    visited[root] = 1;
-    for (auto &child : graph[root]) {
-        edge++;
-        if (!visited[child]) {
-            vertex++;
-            find_tree(child);
-        }
-    }
+void union_set(int v1, int v2) {
+    int r1 = find(v1);
+    int r2 = find(v2);
+
+    if (r1 == r2) P[r1] = 0;
+    else if (r1 < r2) P[r2] = r1;
+    else P[r1] = r2;
 }
 
 int main() {
     fast_io;
-    int test_cnt = 1;
-    while(true) {
-        cin >> n >> m;
-        graph = vector<vector<int>>(n+1);
-        memset(visited, 0, sizeof(visited));
+    for (int t = 1; ; t++) {
+        cin >> N >> M;
+        if (N == 0 && M == 0) break;
+        for (int i = 1; i <= N; i++) P[i] = i;
 
-        int tree_cnt = 0;
-        if (n == 0 && m == 0) break;
-        for (int i = 0; i < m; i++) {
-            int node1, node2;
-            cin >> node1 >> node2;
-            graph[node1].push_back(node2);
-            graph[node2].push_back(node1);
+        for (int i = 1; i <= M; i++) {
+            cin >> u >> v;
+            union_set(u,v);
         }
 
-        for (int r = 1; r <= n; r++) {
-            vertex = 1; edge = 0;
-            if (!visited[r]) {
-                find_tree(r);
-                if (vertex - (edge / 2) == 1) tree_cnt++;
-            }
+        for (int i = 1; i <= N; i++) {
+            int root = find(i);
+            if (root == i) treeSet.push_back(i);
         }
-        if (tree_cnt > 1)
-            cout << "Case " << test_cnt <<": A forest of " << tree_cnt << " trees." <<'\n';
-        else if (tree_cnt == 1)
-            cout << "Case " << test_cnt <<": There is one tree." <<'\n';
-        else
-            cout << "Case " << test_cnt <<": No trees." << '\n';
-        test_cnt++;
+
+        int sz = (int)treeSet.size();
+        cout << "Case " << t << ": ";
+        if (sz == 0) cout << "No trees." << '\n';
+        else if (sz == 1) cout <<"There is one tree." << '\n';
+        else cout << "A forest of " << sz << " trees." << '\n';
+
+        treeSet.clear();
     }
-    return 0;
-}*/
+}

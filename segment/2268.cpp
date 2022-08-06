@@ -1,40 +1,43 @@
-/*
 #include <bits/stdc++.h>
 #define all(x) (x).begin(), (x).end()
 #define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 using namespace std;
-const int MAX = 1000000;
-int N, M;
-vector<long long> tree;
+using pii = pair<int, int>;
+using ll = long long;
+const int MAX = 1e6 + 1;
+int N, M, a, b, c, arr[MAX];
+ll tree[4 * MAX];
 
-long long update(int n, int s, int e, int t, int val) {
-    if (s > t || e < t) return tree[n];
-    if (s == e) return tree[n] = val;
-    int mid = (s+e) / 2;
-    return tree[n] = update(n*2, s, mid, t, val) + update(n*2+1, mid+1, e, t, val);
+ll sum(int l, int r, int nodeNum, int nodeL, int nodeR) {
+    if (r < nodeL || nodeR < l) return 0;
+    if (l <= nodeL && nodeR <= r) return tree[nodeNum];
+    int mid = (nodeL + nodeR) / 2;
+    return sum(l, r, nodeNum * 2, nodeL, mid)
+            + sum(l, r, nodeNum * 2 + 1, mid + 1, nodeR);
 }
 
-long long sum(int n, int s, int e, int l, int r) {
-    if (r < s || e < l) return 0;
-    if (l <= s && e <= r) return tree[n];
-    int mid = (s+e) / 2;
-    return sum(n*2, s, mid, l, r) + sum(n*2+1, mid+1, e, l, r);
+void modify(int s, int e, int nodeNum, int idx, int diff) {
+    if (idx < s || idx > e) return;
+    tree[nodeNum] += diff;
+    if (s == e) return;
+    int mid = (s + e) / 2;
+    modify(s, mid, nodeNum * 2, idx, diff);
+    modify(mid + 1, e, nodeNum * 2 + 1, idx, diff);
 }
 
 int main() {
     fast_io;
     cin >> N >> M;
-    int h = ceil(log2(N));
-    int sz = 1 << (h+1);
-    tree = vector<long long>(sz);
 
-    for (int i = 0; i < M; i++) {
-        int a, x, y;
-        cin >> a >> x >> y;
-        if (a) update(1, 0, N-1, x-1, y);
-        else {
-            if (x > y) swap(x,y);
-            cout << sum(1, 0, N-1, x-1, y-1) << '\n';
+    for (int i = 1; i <= M; i++) {
+        cin >> a >> b >> c;
+        if (a) { //modify
+            int tmp = arr[b];
+            arr[b] = c;
+            modify(1, N, 1, b, c - tmp);
+        }else { //sum
+            if (b > c) swap(b, c);
+            cout << sum(b, c, 1, 1, N) << '\n';
         }
     }
-}*/
+}

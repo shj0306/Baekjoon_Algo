@@ -1,0 +1,14 @@
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/5.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/6.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/2_best.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/1.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/2.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/4_best.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/3.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/1_best.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/4.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/5_best.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/7.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/minimax_algorithm.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/tjgml/clion/kakao_2022/cmake-build-debug/CMakeFiles/rebuild_cache.dir

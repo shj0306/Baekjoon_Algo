@@ -1,67 +1,60 @@
-//#include <bits/stdc++.h>
-//#define all(x) (x).begin(), (x).end()
-//#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
-//using namespace std;
-//using pii = pair<int, int>;
-//using ll = long long;
-//
-////https://11001.tistory.com/21
-//int N, paper[11][11], check[11][11];
-//int unit_paper[6], ans = 26;
-//
-//bool is_promising(int r, int c, int k) {
-//    for (int i = r; i < r + k; i++) {
-//        for (int j = c; j < c + k; j++) {
-//            if (!paper[i][j]) return false;
-//        }
-//    }
-//    return true;
-//}
-//
-//void process_paper(int r, int c, int k, int num) {
-//    for (int i = r; i < r + k; i++) {
-//        for (int j = c; j < c + k; j++) {
-//            paper[i][j] = num;
-//        }
-//    }
-//}
-//
-//void back_tracking(int x, int y, int cnt) {
-//    while(paper[y][x] == 0) {
-//        if (++x > 10) {
-//            if (++y > 10) {
-//                ans = min(ans, cnt);
-//                return;
-//            }
-//            x = 1;
-//        }
-//    }
-//
-//    //가지 치기
-//    if (ans <= cnt) return;
-//
-//    //모든 크기 내림차순 시도
-//    for (int k = 5; k >= 1; k--) {
-//        if (x + k > 11 || y + k > 11) continue;
-//        if (unit_paper[k] < 5 && is_promising(y, x, k)) {
-//            process_paper(y, x, k, 0);
-//            unit_paper[k]++;
-//
-//            back_tracking(x, y, cnt + 1);
-//
-//            process_paper(y, x, k, 1);
-//            unit_paper[k]--;
-//        }
-//    }
-//}
-//
-//int main() {
-//    fast_io;
-//    for (int i = 1; i <= 10; i++) {
-//        for (int j = 1; j <= 10; j++) {
-//            cin >> paper[i][j];
-//        }
-//    }
-//    back_tracking(1, 1, 0);
-//    cout << (ans == 26 ? -1 : ans) << '\n';
-//}
+#include <bits/stdc++.h>
+#define all(x) (x).begin(), (x).end()
+#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+using namespace std;
+using pii = pair<int,int>;
+using ll = long long;
+int N, ans = 26, paper[11][11], used[6];
+
+bool possible(int l, int r, int c) {
+    for (int i = r; i < r + l; i++) {
+        for (int j = c; j < c + l; j++) {
+            if (paper[i][j] == 0) return false;
+        }
+    }
+    return true;
+}
+
+void process_paper(int l, int r, int c, int val) {
+    for (int i = r; i < r + l; i++) {
+        for (int j = c; j < c + l; j++) {
+            paper[i][j] = val;
+        }
+    }
+}
+
+void backtracking(int r, int c, int cnt) {
+    if (r > 10) {
+        ans = min(ans, cnt);
+        return;
+    }
+    if (c > 10) {
+        backtracking(r+1, 1, cnt);
+        return;
+    }
+    if (paper[r][c] == 0) backtracking(r, c+1, cnt);
+    else {
+        for (int i = 5; i >= 1; i--) {
+            if (used[i] == 5) continue;
+            if (possible(i, r, c)) {
+                process_paper(i, r, c, 0);
+                used[i]++;
+                backtracking(r, c+1, cnt + 1);
+                used[i]--;
+                process_paper(i, r, c, 1);
+            }
+        }
+    }
+}
+
+int main() {
+    fast_io;
+    for (int i = 1; i <= 10; i++) {
+        for (int j = 1; j <= 10; j++) {
+            cin >> paper[i][j];
+        }
+    }
+
+    backtracking(1,1,0);
+    cout << (ans == 26 ? -1 : ans);
+}

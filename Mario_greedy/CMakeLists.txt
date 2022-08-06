@@ -3,4 +3,12 @@ project(Mario_greedy)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(coding 10162.cpp 13305.cpp 1439.cpp 16953.cpp 1744.cpp 1202.cpp 2864.cpp 1543.cpp 11000.cpp 2847.cpp 2720.cpp 14916.cpp 1343.cpp 2217.cpp)
+
+add_executable(4796 4796.cpp)
+add_executable(1449 1449.cpp)
+add_executable(17509 17509.cpp)
+add_executable(11047 11047.cpp)
+add_executable(1700 1700.cpp)
+add_executable(13904 13904.cpp)
+add_executable(15748 15748.cpp)
+add_executable(1493 1493.cpp)

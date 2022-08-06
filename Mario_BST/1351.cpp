@@ -1,17 +1,23 @@
-/*
 #include <bits/stdc++.h>
+#define all(x) (x).begin(), (x).end()
 #define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 using namespace std;
-long long n,p,q;
-map<long long, long long> memory;
-long long solve(long long val) {
-    if (val == 0) return 1;
-    if (memory.find(val) != memory.end()) return memory[val];
-    return memory[val] = solve(val / p) + solve(val / q);
+using pii = pair<int,int>;
+using ll = long long;
+int P, Q;
+ll N;
+map<ll, ll> mp;
+
+ll solve(ll n) {
+    if (n == 0) return 1;
+    if (mp.find(n) != mp.end()) return mp[n];
+    mp[n] = solve(n/P) + solve(n/Q);
+    return mp[n];
 }
 
 int main() {
-    cin >> n >> p >> q;
-    cout << solve(n) << '\n';
-    return 0;
-}*/
+    fast_io;
+    cin >> N >> P >> Q;
+
+    cout << solve(N);
+}

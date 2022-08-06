@@ -1,59 +1,63 @@
-/*
 #include <bits/stdc++.h>
-#define all(x) begin(x), end(x)
+#define all(x) (x).begin(), (x).end()
 #define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 using namespace std;
-const int MAX = 100000;
-int N;
-vector<pair<int,int>> arr;
-vector<int> tree;
+using pii = pair<int,int>;
+using ll = long long;
+const int MAX = 1e5+1;
+int N, val, arr[MAX], tree[4 * MAX];
 
-int construct(int n, int s, int e) {
-    if (s == e) return tree[n] = 1;
-    int mid = (s+e) / 2;
-    return tree[n] = construct(n * 2, s, mid) + construct(n*2+1, mid+1, e);
+int init(int s, int e, int nodeNum) {
+    if (s == e) {
+        return tree[nodeNum] = 1;
+    }
+    int mid = (s + e) / 2;
+    return tree[nodeNum] = init(s, mid, nodeNum * 2) +
+            init(mid + 1, e, nodeNum * 2 + 1);
 }
 
-int sum(int n, int s, int e, int l, int r) {
-    if (r < s || e < l) return 0;
-    if (l <= s && e <= r) return tree[n];
-    int mid = (s+e) / 2;
-    return sum(n*2, s, mid, l, r) + sum(n*2+1, mid+1, e, l, r);
+int sum(int l, int r, int nodeNum, int nodeL, int nodeR) {
+    if (r < nodeL || nodeR < l) return 0;
+    if (l <= nodeL && nodeR <= r) return tree[nodeNum];
+    int mid = (nodeL + nodeR) / 2;
+    return sum(l, r, nodeNum * 2, nodeL, mid)
+    + sum(l, r, nodeNum * 2 + 1, mid + 1, nodeR);
 }
 
-int update(int n, int s, int e, int idx) {
-    if (idx < s || e < idx) return tree[n];
-    if (s == e) return tree[n] = 0;
-    int mid = (s+e) / 2;
-    return tree[n] = update(n*2, s, mid, idx) + update(n*2+1, mid+1, e, idx);
+void update(int s, int e, int nodeNum, int idx) {
+    if (idx < s || idx > e) return;
+    tree[nodeNum]--;
+    if (s == e) return;
+    int mid = (s + e) / 2;
+    update(s, mid, nodeNum * 2, idx);
+    update(mid + 1, e, nodeNum * 2 + 1, idx);
 }
 
 int main() {
     fast_io;
     cin >> N;
-    int h = ceil(log2(N));
-    int sz = 1 << (h+1);
-    tree = vector<int>(sz);
-
-    for (int i = 0; i < N; i++) {
-        int num; cin >> num;
-        arr.emplace_back(num, i);
+    init(1, N, 1);
+    for (int i = 1; i <= N; i++) {
+        cin >> val;
+        arr[val] = i;
     }
 
-    sort(all(arr));
-    construct(1, 0, N-1);
+    init(1, N, 1);
+    int l = 1, r = N, idx = 0, K = 0;
+    for (int i = 1; i <= N; i++) {
+        if (i % 2) { //작은 거
+            idx = arr[l];
+            K = sum(1, idx, 1, 1, N) - 1;
+            update(1, N, 1, idx);
+            l++;
+        }else { //큰 거
+            idx = arr[r];
+            K = sum(idx, N, 1, 1, N) - 1;
+            update(1, N, 1, idx);
+            r--;
+        }
 
-    for (int i = 0; i < N/2; i++) {
-        int min_idx = arr[i].second;
-        int max_idx = arr[N-(i+1)].second;
-        //min 구간합 구하고
-        cout << sum(1, 0, N-1, 0, min_idx-1) << '\n';
-        //update
-        update(1, 0, N-1, min_idx);
-        //max 구간합 구한다.
-        cout << sum(1, 0, N-1, max_idx+1, N-1) << '\n';
-        //update
-        update(1, 0, N-1, max_idx);
+        cout << K << '\n';
     }
-    if (N % 2 == 1) cout << 0 << '\n';
-}*/
+
+}

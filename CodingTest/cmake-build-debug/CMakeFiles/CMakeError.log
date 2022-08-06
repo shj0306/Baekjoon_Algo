@@ -1,0 +1,56 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/tjgml/clion/CodingTest/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_5ee6b\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_5ee6b.dir\build.make /nologo -L                  CMakeFiles\cmTC_5ee6b.dir\build
+Building C object CMakeFiles/cmTC_5ee6b.dir/CMakeCCompilerABI.c.obj
+	C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_5ee6b.dir\CMakeCCompilerABI.c.obj.d --working-dir=C:\Users\tjgml\clion\CodingTest\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @C:\Users\tjgml\AppData\Local\Temp\nm36E8.tmp
+NMAKE : fatal error U1077: 'C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe' : '0xc0000409' 반환 코드입니다.
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"' : '0x2' 반환 코드입니다.
+Stop.
+
+
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/tjgml/clion/CodingTest/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_129c5\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_129c5.dir\build.make /nologo -L                  CMakeFiles\cmTC_129c5.dir\build
+Building CXX object CMakeFiles/cmTC_129c5.dir/CMakeCXXCompilerABI.cpp.obj
+	C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_129c5.dir\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\Users\tjgml\clion\CodingTest\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @C:\Users\tjgml\AppData\Local\Temp\nm3B0E.tmp
+NMAKE : fatal error U1077: 'C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe' : '0xc0000409' 반환 코드입니다.
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"' : '0x2' 반환 코드입니다.
+Stop.
+
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/tjgml/clion/CodingTest/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_60603\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_60603.dir\build.make /nologo -L                  CMakeFiles\cmTC_60603.dir\build
+Building C object CMakeFiles/cmTC_60603.dir/CMakeCCompilerABI.c.obj
+	C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_60603.dir\CMakeCCompilerABI.c.obj.d --working-dir=C:\Users\tjgml\clion\CodingTest\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @C:\Users\tjgml\AppData\Local\Temp\nm7570.tmp
+NMAKE : fatal error U1077: 'C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe' : '0xc0000409' 반환 코드입니다.
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"' : '0x2' 반환 코드입니다.
+Stop.
+
+
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/tjgml/clion/CodingTest/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_f1816\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_f1816.dir\build.make /nologo -L                  CMakeFiles\cmTC_f1816.dir\build
+Building CXX object CMakeFiles/cmTC_f1816.dir/CMakeCXXCompilerABI.cpp.obj
+	C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_f1816.dir\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\Users\tjgml\clion\CodingTest\cmake-build-debug\CMakeFiles\CMakeTmp --filter-prefix="" -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @C:\Users\tjgml\AppData\Local\Temp\nm7977.tmp
+NMAKE : fatal error U1077: 'C:\Users\tjgml\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe' : '0xc0000409' 반환 코드입니다.
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"' : '0x2' 반환 코드입니다.
+Stop.
+
+
+
+

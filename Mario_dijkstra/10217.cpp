@@ -1,62 +1,80 @@
-//#include <bits/stdc++.h>
-//#define all(x) (x).begin(), (x).end()
-//#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
-//using namespace std;
-//using pii = pair<int,int>;
-//using ll = long long;
-//const int INF = 1e9;
-//int T, N, M, K, dist[101][10001];
-//vector<vector<pair<int, pii>>> adj;
-//
-//int dijkstra() {
-//    priority_queue<pair<int, pii>, vector<pair<int, pii>>, greater<>> pq;
-//    memset(dist,-1,sizeof(dist));
-//    pq.push({0, {1,M}});
-//
-//    dist[1][M] = 0;
-//
-//    while(!pq.empty()) {
-//        int time = pq.top().first;
-//        auto [cur, bal] = pq.top().second;
-//        pq.pop();
-//
-//        if (time > dist[cur][bal]) continue;
-//
-//        for (int i = 0; i < adj[cur].size(); i++) {
-//            int nxt = adj[cur][i].first;
-//            auto [c, t] = adj[cur][i].second;
-//
-//            if (bal >= c) { //현재남은 돈이 비행기값보다 같거나 크다면
-//                if (dist[nxt][bal-c] == -1 || dist[nxt][bal-c] > dist[cur][bal] + t) {
-//                    dist[nxt][bal-c] = dist[cur][bal] + t;
-//                    pq.push({dist[nxt][bal-c], {nxt, bal-c}});
-//                }
-//            }
-//        }
-//    }
-//    int res = INF;
-//    for (int i = 0; i <= M; i++)
-//        if (dist[N][i] != -1) res = min(res, dist[N][i]);
-//
-//    return res;
-//}
-//
-//int main() {
-//    fast_io;
-//    cin >> T;
-//    while(T--) {
-//        cin >> N >> M >> K;
-//        adj.resize(N+1);
-//
-//        for (int i = 0; i < K; i++) {
-//            int u, v, c, d;
-//            cin >> u >> v >> c >> d;
-//            adj[u].emplace_back(v, make_pair(c,d));
-//        }
-//
-//        int res = dijkstra();
-//        if (res == INF) cout << "Poor KCM" << '\n';
-//        else cout << res << '\n';
-//        adj.clear();
-//    }
-//}
+#include <bits/stdc++.h>
+#define all(x) (x).begin(), (x).end()
+#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+using namespace std;
+using pii = pair<int,int>;
+using ll = long long;
+const int INF = 1e9;
+
+int T, N, M, K, u, v, c, d, dist[101][10001];
+struct Info {
+    int nxt;
+    int C;
+    int D;
+};
+
+struct Info2 {
+    int time;
+    int city;
+    int cost;
+};
+
+struct CMP {
+    bool operator() (Info2 &a, Info2 &b) {
+        return a.time > b.time;
+    }
+};
+
+vector<vector<Info>> adj;
+
+void init() {
+    adj.resize(N+1);
+    for (int i = 1; i <= N; i++) {
+        fill(dist[i], dist[i]+M+1, INF);
+    }
+}
+
+void dijkstra() {
+    priority_queue<Info2, vector<Info2>, CMP> pq;
+    dist[1][M] = 0;
+    pq.push({dist[1][M], 1, M});
+
+    while(!pq.empty()) {
+        auto [time, cur, cost] = pq.top();
+        pq.pop();
+
+        if (dist[cur][cost] < time) continue;
+
+        for (auto [nxt, C, D] : adj[cur]) {
+            if (cost >= C) {
+                if (dist[nxt][cost-C] > dist[cur][cost] + D) {
+                    dist[nxt][cost-C] = dist[cur][cost] + D;
+                    pq.push({dist[nxt][cost-C], nxt, cost-C});
+                }
+            }
+        }
+    }
+}
+
+int main() {
+    fast_io;
+    cin >> T;
+    while(T--) {
+        cin >> N >> M >> K;
+        init();
+
+        for (int i = 1; i <= K; i++) {
+            cin >> u >> v >> c >> d;
+            adj[u].push_back({v,c,d});
+        }
+
+        dijkstra();
+        int ans = INF;
+        for (int i = 0; i <= M; i++)
+            ans = min(ans, dist[N][i]);
+
+        if (ans == INF) cout << "Poor KCM" << '\n';
+        else cout << ans << '\n';
+        adj.clear();
+    }
+}

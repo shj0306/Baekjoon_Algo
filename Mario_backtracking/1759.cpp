@@ -1,41 +1,55 @@
-/*
 #include <bits/stdc++.h>
 #define all(x) (x).begin(), (x).end()
+#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 using namespace std;
-int l, c;
-vector<string> ans;
-string temp;
-vector<char> arr;
+using pii = pair<int,int>;
+using ll = long long;
+int L, C, check[16];
+string pw;
+vector<char> vec;
 
-bool is_satisfy(string tmp) {
-    //모음 1개 이상, 자음 2개 이상
-    int vowel_cnt = 0, consonant_cnt = 0;
-    for (auto &val : tmp) {
-        if (val == 'a' || val == 'e' || val == 'i' || val == 'o' || val =='u') vowel_cnt++;
-        else consonant_cnt++;
+//암호로서 적합한 암호인지?
+bool possible() {
+    int con = 0, vow = 0;
+    for (auto c : pw) {
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') con++;
+        else vow++;
     }
-    return (vowel_cnt >= 1 && consonant_cnt >= 2);
+    return con >= 1 && vow >= 2;
 }
 
-void dfs(int cur) {
-    if (temp.size() == l) { //l 이상은 볼 필요가 없기 때문에 리턴시킨다.
-        if (is_satisfy(temp))
-            ans.push_back(temp);
+void backtracking(int idx, int cnt) {
+    if (cnt == L) {
+        if (possible()) {
+            cout << pw << '\n';
+        }
         return;
     }
-    if (cur == c) return;
-    dfs(cur + 1);
-    temp.push_back(arr[cur]);
-    dfs(cur + 1);
-    temp.pop_back();
+    for (int i = idx; i < C; i++) {
+        if (!check[i]) {
+            check[i] = 1;
+            pw.push_back(vec[i]);
+            backtracking(i, cnt+1);
+            pw.pop_back();
+            check[i] = 0;
+        }
+    }
 }
+
 int main() {
-    cin >> l >> c;
-    arr = vector<char>(c);
-    for (int i = 0; i < c; i++) cin >> arr[i];
-    sort(all(arr));
-    dfs(0);
-    sort(all(ans));
-    for (auto &val : ans) cout << val << '\n';
+    fast_io;
+    cin >> L >> C;
+
+    for (int i = 0; i < C; i++) {
+        char c; cin >> c;
+        vec.push_back(c);
+    }
+    sort(all(vec));
+    backtracking(0,0);
 }
-*/
+/*
+ * 1. 모음이 1개 이상, 자음은 2개 이상
+ * 2. 정렬된 상태
+ *
+ * a c i s t w
+ */

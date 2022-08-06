@@ -1,37 +1,42 @@
-//#include <bits/stdc++.h>
-//#define all(x) (x).begin(), (x).end()
-//#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
-//using namespace std;
-//using pii = pair<int,int>;
-//
-//int n, m;
-//int dp[1001], indegree[1001];
-//vector<int> pre[1001];
-//
-//int main() {
-//    fast_io;
-//    cin >> n >> m;
-//    for (int i = 0; i < m; i++) {
-//        int u, v; cin >> u >> v;
-//        indegree[v]++;
-//        pre[u].push_back(v);
-//    }
-//
-//    queue<int> q;
-//    for (int i = 1; i <= n; i++) {
-//        if (indegree[i] == 0) q.push(i);
-//    }
-//
-//    while(!q.empty()) {
-//        int cur = q.front();
-//        q.pop();
-//        for (auto nxt : pre[cur]) {
-//
-//            if (--indegree[nxt] == 0) {
-//                q.push(nxt);
-//                dp[nxt] = max(dp[nxt], dp[cur] + 1);
-//            }
-//        }
-//    }
-//    for (int i = 1; i <= n; i++) cout << dp[i]+1 << ' ';
-//}
+#include <bits/stdc++.h>
+#define all(x) (x).begin(), (x).end()
+#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+using namespace std;
+using pii = pair<int,int>;
+using ll = long long;
+int N, M, indegree[1001], res[1001];
+vector<vector<int>> adj;
+
+int main() {
+    fast_io;
+    cin >> N >> M;
+    adj.resize(N+1);
+
+    for (int i = 0; i < M; i++) {
+        int a, b; cin >> a >> b;
+        adj[a].push_back(b);
+        indegree[b]++;
+    }
+
+    queue<pii> q;
+    for (int i = 1; i <= N; i++) {
+        if (indegree[i] == 0)
+            q.push({i,1});
+    }
+
+    while(!q.empty()) {
+        auto [cur, sem]  = q.front();
+        q.pop();
+
+        res[cur] = sem;
+
+        for (auto nxt : adj[cur]) {
+            if (--indegree[nxt] == 0)
+                q.push({nxt, sem+1});
+        }
+    }
+
+    for (int i = 1; i <= N; i++) {
+        cout << res[i] << ' ';
+    }
+}

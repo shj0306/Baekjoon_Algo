@@ -1,4 +1,3 @@
-/*
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -9,7 +8,7 @@ bool cmp(pair<int,int> a, pair<int,int> b) {
 vector<pair<int,int>> cube;
 ll l,w,h;
 ll calc_func(int i) {
-    ll side = pow(2, cube[i].first);
+    ll side = 1 << cube[i].first;
     return (l/side)* (w/side) * (h/side);
 }
 int main() {
@@ -20,6 +19,7 @@ int main() {
     total_v = l * w * h; //전체 박스 볼륨
     for (int i = 0; i < n; i++) cin >> cube[i].first >> cube[i].second;
     sort(begin(cube), end(cube), cmp);
+
     for (int i = 0; i < n; i++) {
         side = pow(2, cube[i].first); //한 변의 길이
         cnt = calc_func(i); //해당 큐브가 박스에 들어갈 수 있는 최대 개수
@@ -38,6 +38,7 @@ int main() {
             cur = tmp;
         }
     }
+
     if (total_v == 0) cout << answer << '\n';
     else cout << -1 << '\n';
-}*/
+}

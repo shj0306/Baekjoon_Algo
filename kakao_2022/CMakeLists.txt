@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.20)
+project(kakao_2022)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(5 5.cpp)
+add_executable(6 6.cpp)
+add_executable(1 1.cpp)
+add_executable(2 2.cpp)
+add_executable(3 3.cpp)
+add_executable(4 4.cpp)
+add_executable(1_best 1_best.cpp)
+add_executable(2_best 2_best.cpp)
+add_executable(4_best 4_best.cpp)
+add_executable(5_best 5_best.cpp)
+add_executable(7 7.cpp)
+add_executable(minimax_algorithm minimax_algorithm.cpp)

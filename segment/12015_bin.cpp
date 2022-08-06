@@ -1,4 +1,3 @@
-/*
 #include <bits/stdc++.h>
 #define all(x) (x).begin(), (x).end()
 #define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
@@ -18,6 +17,6 @@ int main() {
             *it = num;
         }
     }
-    int sz = arr.size();
+    int sz = (int)arr.size();
     cout << sz << '\n';
-}*/
+}

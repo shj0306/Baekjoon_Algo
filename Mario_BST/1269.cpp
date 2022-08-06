@@ -1,37 +1,26 @@
-/*
 #include <bits/stdc++.h>
 #define all(x) (x).begin(), (x).end()
 #define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 using namespace std;
-
-vector<int> arr;
-
-bool bin_search(int start, int end, int num) {
-    if (start > end) return false;
-    int mid = (start + end) / 2;
-    if (arr[mid] == num) return true;
-    else if (arr[mid] < num) return bin_search(mid+1, end, num);
-    else return bin_search(start, mid-1, num);
-}
+using pii = pair<int,int>;
+using ll = long long;
+int N, M, val, is_cnt;
 
 int main() {
     fast_io;
-    int n, m, del = 0;
-    cin >> n >> m;
-    arr = vector<int>(n);
+    cin >> N >> M;
+    set<int> A;
 
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
+    for (int i = 1; i <= N; i++) {
+        cin >> val;
+        A.insert(val);
     }
 
-    sort(begin(arr), end(arr));
-
-    for (int i = 0; i < m; i++) {
-        int num;
-        cin >> num;
-        if (bin_search(0, n-1, num)) del++;
+    for (int i = 1; i <= M; i++) {
+        cin >> val;
+        if (A.find(val) != A.end()) { //교집합
+            is_cnt++;
+        }
     }
-
-    cout << n + m - del * 2 << '\n';
-    return 0;
-}*/
+    cout << N + M - 2 * is_cnt;
+}

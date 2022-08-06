@@ -1,53 +1,61 @@
-//#include <bits/stdc++.h>
-//#define all(x) (x).begin(), (x).end()
-//#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
-//using namespace std;
-//
-//int N; //질문의 개수
-//vector<int> result;
-//vector<int> possible_set;
-////504가지 3자리 숫자(123~987)
-////조건에 맞는 숫자인지 판단한다.
-//bool check(int num) {
-//    set<char> res;
-//    for (auto c : to_string(num)) {
-//        if (c == '0') return false;
-//        res.insert(c);
-//    }
-//    return (res.size() == 3);
-//}
-//
-////해당 숫자에 해당 스트라이크, 볼이 가능한 모든 숫자를 set에 저장(중복)
-//void ret_possible(int strike, int ball, const string& val) {
-//    for (int num : result) {
-//        string s_num = to_string(num);
-//        int s = 0, b = 0;
-//        for (int i = 0; i < 3; i++) {
-//            for (int j = 0; j < 3; j++) {
-//                if (val[i] == s_num[j]) {
-//                    if (i == j) s++;
-//                    else b++;
-//                }
-//            }
-//        }
-//        if (s == strike && b == ball) possible_set.push_back(num);
-//    }
-//}
-//
-//int main() {
-//    fast_io;
-//    cin >> N;
-//    int num, strike, ball;
-//
-//    for (int i = 123; i <= 987; i++) {
-//        if (check(i)) result.push_back(i);
-//    }
-//
-//    for (int i = 1; i <= N; i++) {
-//        cin >> num >> strike >> ball;
-//        ret_possible(strike, ball, to_string(num));
-//        result = possible_set;
-//        possible_set.clear();
-//    }
-//    cout << result.size() << '\n';
-//}
+#include <bits/stdc++.h>
+#define all(x) (x).begin(), (x).end()
+#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+using namespace std;
+using pii = pair<int,int>;
+using ll = long long;
+int N, check[10], ans;
+struct Info {
+    string num;
+    int strike{},ball{};
+};
+vector<Info> vec;
+
+bool is_possible(const string& num) {
+    for (auto c : num) {
+        if (c == '0') return false;
+        if (!check[c-'0']) check[c-'0']++;
+        else return false;
+    }
+    return true;
+}
+
+bool is_correct(const string& num1, const string& num2, int strike, int ball) {
+    int st = 0, ba = 0;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            if (num1[i] == num2[j]) {
+                if (i == j) st++;
+                else ba++;
+            }
+        }
+    }
+    return st == strike && ba == ball;
+}
+
+int main() {
+    fast_io;
+    cin >> N;
+    vec.resize(N);
+
+    for (int i = 0; i < N; i++) {
+        cin >> vec[i].num >> vec[i].strike >> vec[i].ball;
+    }
+
+    for (int num = 123; num < 999; num++) {
+        memset(check, 0, sizeof(check));
+        if (is_possible(to_string(num))) {
+            bool possi = true;
+            for (int i = 0; i < N; i++){
+                if (!is_correct(to_string(num), vec[i].num,
+                                vec[i].strike, vec[i].ball)) {
+                    possi = false;
+                    break;
+                }
+            }
+            if (possi) ans++;
+        }
+    }
+
+    cout << ans;
+}

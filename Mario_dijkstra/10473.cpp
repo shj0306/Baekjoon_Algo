@@ -1,62 +1,66 @@
-/*
 #include <bits/stdc++.h>
 #define all(x) (x).begin(), (x).end()
 #define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 using namespace std;
-const int MAX = 110;
-const int INF = 1e9;
-using pff = pair<float,float>;
-float sx, sy, dx, dy;
-int n;
-float cost[MAX];
-bool visited[MAX];
-vector<pff> cannon;
-//0 : 출발 n+1 : 도착
+using pii = pair<int,int>;
+using pdd = pair<double, double>;
+using pdi = pair<double, int>;
+using ll = long long;
+const int INF = 1000;
+int N, visited[110];
+bool is_cannon;
+double sx, sy, dx, dy, dist[110]; //0 : 출발, N + 1 : 도착
+vector<pdd> Info;
 
-priority_queue<pair<float,int>, vector<pair<float,int>>, greater<>> pq;
+double ret_dist(double x1, double y1, double x2, double y2) {
 
-float calc_time(int i, int j, bool is_cannon) {
-    float distance = sqrt(pow((cannon[i].first - cannon[j].first),2)
-                          + pow((cannon[i].second - cannon[j].second),2));
-
-    return (is_cannon) ? abs(distance - 50) / 5 + 2 : distance / 5;
+    return sqrt(pow(x1-x2, 2) + pow(y1-y2, 2));
 }
-
-float dijkstra(int start) {
-    cost[start] = 0;
-    pq.push({0.0, 0});
-    while(!pq.empty()) {
-        int cur; bool is_cannon = false;
-        do {
-            cur = pq.top().second;
-            pq.pop();
-        }while(!pq.empty() && visited[cur]);
-        if (visited[cur]) break;
-        visited[cur] = true;
-        if (cur != 0 && cur != n + 1) is_cannon = true;
-        for (int i = 0; i <= n+1; i++) {
-            if (visited[i]) continue;
-            float time = calc_time(i, cur, is_cannon);
-            if (cost[i] > cost[cur] + time) {
-                cost[i] = cost[cur] + time;
-                pq.push({cost[i], i});
-            }
-        }
-    }
-    return cost[n+1];
-}
-
 
 int main() {
     fast_io;
     cin >> sx >> sy >> dx >> dy;
-    cin >> n;
-    cannon = vector<pff> (n+2);
+    cin >> N;
+    Info.resize(N+2);
 
-    cannon[0].first = sx; cannon[0].second = sy;
-    for (int i = 1; i <= n; i++)cin >> cannon[i].first >> cannon[i].second;
-    cannon[n+1].first = dx; cannon[n+1].second = dy;
-    fill(visited, visited+n+2, false);
-    fill(cost, cost+n+2, INF);
-    cout << dijkstra(0) << '\n';
-}*/
+    Info[0] = {sx, sy};
+    for (int i = 1; i <= N; i++) cin >> Info[i].first >> Info[i].second;
+    Info[N+1] = {dx, dy};
+
+    fill(dist, dist+N+2, INF);
+    dist[0] = 0;
+
+    priority_queue<pdi, vector<pdi>, greater<>> pq;
+    pq.push({dist[0], 0});
+
+    while(!pq.empty()) {
+        int cur;
+        do {
+            cur = pq.top().second;
+            pq.pop();
+        }while(!pq.empty() && visited[cur]);
+
+        if (visited[cur]) break;
+        visited[cur] = 1;
+
+        auto [cur_x, cur_y] = Info[cur];
+        if (cur >= 1 && cur <= N) is_cannon = true;
+        else is_cannon = false;
+
+        for (int i = 0; i <= N+1; i++) {
+            if (visited[i]) continue;
+            auto [c_x, c_y] = Info[i];
+            double time;
+            if (is_cannon)
+                time = abs(ret_dist(cur_x, cur_y, c_x, c_y) - 50) / 5 + 2;
+            else
+                time = ret_dist(cur_x, cur_y, c_x, c_y) / 5;
+
+            if (dist[i] > dist[cur] + time) {
+                dist[i] = dist[cur] + time;
+                pq.push({dist[i], i});
+            }
+        }
+    }
+    printf("%.6f\n", dist[N+1]);
+}

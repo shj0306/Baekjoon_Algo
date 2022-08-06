@@ -1,110 +1,55 @@
-/*
 #include <bits/stdc++.h>
+#define all(x) (x).begin(), (x).end()
 #define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 using namespace std;
+using pii = pair<int,int>;
+using ll = long long;
+const int MAX = 10001;
+const int INF = 1e5;
+int N, u, ch1, ch2, cnt = 1, is_root[MAX];
+vector<pii> tree;
+pii res[MAX];
 
-struct NODE {
-    int left;
-    int right;
-    int height;
-    int col;
-};
-
-int N, p, ch1, ch2, col = 1;
-vector<NODE> tree;
-vector<int> parent;
-
-int find_root() {
-    int root = 1;
-    while(parent.at(root) != -1) {
-        root = parent.at(root);
-    }
-    return root;
-}
-
-//각 높이 별로 열 값을 오름차순 정렬
-int sort_node(const NODE& node1, const NODE& node2) {
-    if (node1.height < node2.height)
-        return true;
-    else if (node1.height == node2.height)
-        return node1.col < node2.col;
-    return false;
-}
-
-//중위순회를 통해서 col 값을 갱신
-void inorder(int node_idx) {
-    NODE *node = &tree[node_idx];
-    if (node->left != -1) inorder(node->left);
-    node->col = col++;
-    if (node->right != -1) inorder(node->right);
-}
-
-//각 레벨 높이 갱신
-void bfs(int root) {
-    queue<int> q;
-    q.push(root);
-    tree[root].height = 1;
-    while(!q.empty()) {
-        auto cur_node = q.front();
-        q.pop();
-        int c1 = tree[cur_node].left;
-        int c2 = tree[cur_node].right;
-        if (c1 != -1) {
-            tree[c1].height = tree[cur_node].height + 1;
-            q.push(c1);
-        }
-        if (c2 != -1) {
-            tree[c2].height = tree[cur_node].height + 1;
-            q.push(c2);
-        }
-    }
+void DFS(int cur, int depth) {
+    auto [lc, rc] = tree[cur];
+    if (lc != -1) DFS(lc, depth+1);
+    res[depth].first = min(res[depth].first, cnt);
+    res[depth].second = max(res[depth].second, cnt++);
+    if (rc != -1) DFS(rc, depth + 1);
 }
 
 int main() {
     fast_io;
     cin >> N;
-    tree = vector<NODE>(N+1);
-    parent = vector<int>(N+1, -1);
+    tree.resize(N+1);
+    memset(is_root, true, sizeof(is_root));
+    for (int i = 1; i <= N; i++) res[i].first = INF;
+
     for (int i = 1; i <= N; i++) {
-        cin >> p >> ch1 >> ch2;
-        tree[p].left = ch1;
-        tree[p].right = ch2;
-        tree[p].height = tree[p].col = -1;
-        if (ch1 != -1) parent[ch1] = p;
-        if (ch2 != -1) parent[ch2] = p;
+        cin >> u >> ch1 >> ch2;
+        tree[u].first = ch1;
+        tree[u].second = ch2;
+        is_root[ch1] = false;
+        is_root[ch2] = false;
     }
 
-    int root = find_root();
-
-    //중위순회로 열 값 갱신
-    inorder(root);
-
-    //bfs로 각각의 높이를 갱신한다.
-    bfs(root);
-
-    //각각의 높이에 해당하는 원소들의 col 위치를 통해서 최대 넓이를 구한다.
-    sort(begin(tree)+1, end(tree), sort_node);
-
-    int height = 1;
-    int min_col = -1; //해당 레벨에서 가장 왼쪽에 있는 열
-    int max_width = 1;
-    int max_height = 1;
-    for (int i = 2; i <= N; i++) {
-        if (height < tree[i].height) {
-            height++;
-            min_col = tree[i].col;
+    int root = -1;
+    for (int i = 1; i <= N; i++) {
+        if (is_root[i]) {
+            root = i;
+            break;
         }
-        else if (height == tree[i].height) {
-            if (max_width < tree[i].col - min_col + 1) {
-                max_width = tree[i].col - min_col + 1;
-                max_height = height;
-            }
+    }
+    DFS(root, 1);
+
+    int num_lev = -1, max_lev = 0;
+    for (int i = 1; i <= N; i++) {
+        auto [l, r] = res[i];
+        if (max_lev < r - l + 1) {
+            max_lev = r - l + 1;
+            num_lev = i;
         }
     }
 
-    cout << max_height << ' ' << max_width << '\n';
-    return 0;
+    cout << num_lev << ' ' << max_lev;
 }
-// http://melonicedlatte.com/algorithm/2018/08/26/193359.html
-// 참고 코드
-*/

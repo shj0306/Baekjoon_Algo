@@ -1,62 +1,61 @@
-/*
 #include <bits/stdc++.h>
 #define all(x) (x).begin(), (x).end()
 #define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 using namespace std;
-const int MAX = 125;
-const int INF = 1e9;
-int n;
-int dx[] = {1, -1, 0, 0};
-int dy[] = {0, 0, 1, -1};
-vector<vector<int>> maze;
-bool visited[MAX][MAX];
-int dist[MAX][MAX];
-priority_queue<pair<int,pair<int,int>>, vector<pair<int,pair<int,int>>>, greater<>> pq;
+using pii = pair<int,int>;
+using ll = long long;
+const int INF = 2e5;
+int N, cost[125][125], dist[125][125];
+int dx[] = {1,-1,0,0};
+int dy[] = {0,0,1,-1};
 
-int dijkstra(int r, int c, int cost) {
+bool is_in(int x, int y) {
+    return x >= 0 && x < N && y >= 0 && y < N;
+}
 
-    pq.push({cost, {r,c}});
-    dist[r][c] = cost;
-    while(!pq.empty()) {
-        pair<int,int> cur;
-        do {
-            cur = pq.top().second;
-            pq.pop();
-        }while(!pq.empty() && visited[cur.first][cur.second]);
-        if (visited[cur.first][cur.second]) break;
-        visited[cur.first][cur.second] = true;
+void init() {
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < N; j++) {
+            dist[i][j] = INF;
+        }
+    }
+}
 
-        for (int i = 0; i < 4; i++) {
-            int nr = cur.first + dy[i];
-            int nc = cur.second + dx[i];
+int bfs(int x, int y) {
+    queue<pii> q;
+    q.push({x,y});
+    init();
+    dist[y][x] = cost[y][x];
 
-            if (nr < 0 || nc < 0 || nr >= n || nc >= n) continue;
-            if (visited[nr][nc]) continue;
-            if (dist[nr][nc] > dist[cur.first][cur.second] + maze[nr][nc]) {
-                dist[nr][nc] = dist[cur.first][cur.second] + maze[nr][nc];
-                pq.push({dist[nr][nc], {nr,nc}});
+    while(!q.empty()) {
+        auto [c_x, c_y] = q.front();
+        q.pop();
+
+        for (int d = 0; d < 4; d++) {
+            int nx = c_x + dx[d];
+            int ny = c_y + dy[d];
+
+            if (!is_in(nx, ny)) continue;
+            if (dist[ny][nx] > dist[c_y][c_x] + cost[ny][nx]) {
+                dist[ny][nx] = dist[c_y][c_x] + cost[ny][nx];
+                q.push({nx, ny});
             }
         }
     }
-    return dist[n-1][n-1];
+    return dist[N-1][N-1];
 }
 
 int main() {
     fast_io;
-    int num = 0;
-    while(true) {
-        cin >> n;
-        if (n == 0) break;
-        maze = vector<vector<int>>(n, vector<int>(n));
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                cin >> maze[i][j];
+
+    for (int t = 1; ; t++) {
+        cin >> N;
+        if (N == 0) break;
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                cin >> cost[i][j];
             }
         }
-
-        memset(visited,false, sizeof(visited));
-        for (int i = 0; i < n; i++) fill(dist[i], dist[i]+n, INF);
-        cout << "Problem " << ++num << ": " << dijkstra(0,0,maze[0][0]) << '\n';
+        cout <<"Problem " << t << ": " << bfs(0, 0) << '\n';
     }
 }
-*/

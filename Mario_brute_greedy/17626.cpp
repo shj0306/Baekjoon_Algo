@@ -1,28 +1,25 @@
-//#include <bits/stdc++.h>
-//#define all(x) (x).begin(), (x).end()
-//#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
-//using namespace std;
-//using pii = pair<int,int>;
-//#define f first
-//#define s second;
-//const int INF = 1e9;
-//int n;
-//int dp[50001];
-//
-//int solve(int num) {
-//    if (num == 0) return 0;
-//    int &ret = dp[num];
-//    if (ret != -1) return ret;
-//    ret = INF;
-//    for (int i = (int)sqrt(num); i >= 1; i--) {
-//        ret = min(ret, solve(num - i*i) + 1);
-//    }
-//    return ret;
-//}
-//
-//int main() {
-//    fast_io;
-//    cin >> n;
-//    memset(dp,-1,sizeof(dp));
-//    cout << solve(n);
-//}
+#include <bits/stdc++.h>
+#define all(x) (x).begin(), (x).end()
+#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
+using namespace std;
+using pii = pair<int,int>;
+using ll = long long;
+const int MAX = 50001;
+int N, dp[MAX];
+
+int main() {
+    fast_io;
+    cin >> N;
+
+    fill(dp, dp+MAX, MAX);
+    dp[0] = 0;
+    for (int i = 1; i * i <= N; i++) dp[i*i] = 1;
+
+    for (int i = 2; i <= N; i++) {
+        for (int j = 1; j * j <= i; j++) {
+            dp[i] = min(dp[i], dp[i-j*j] + 1);
+        }
+    }
+
+    cout << dp[N];
+}

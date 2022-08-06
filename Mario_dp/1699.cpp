@@ -1,22 +1,27 @@
-/*
 #include <bits/stdc++.h>
 #define all(x) (x).begin(), (x).end()
+#define fast_io ios::sync_with_stdio(0), cin.tie(0), cout.tie(0)
 using namespace std;
+using pii = pair<int,int>;
+using ll = long long;
+const int MAX = 1e5+1;
+const int INF = 1e5+1;
+int N, dp[MAX];
 
-vector<int> dp;
-const int IMP = 1e6;
+int solve(int x) {
+    if (x == 0) return 0;
+    int &ret = dp[x];
+    if (ret != -1) return ret;
+    ret = INF;
+    for (int i = 1; i * i <= x; i++) {
+        ret = min(ret, solve(x - i * i) + 1);
+    }
+    return ret;
+}
 
 int main() {
-    cin.tie(0)->sync_with_stdio(0);
-    int n;
-    cin >> n;
-    dp = vector<int>(n+1, IMP);
-    dp[0] = 0; dp[1] = 1;
-    for (int i = 2; i <= n; i++) {
-        for (int j = 1; j * j <= i; j++) {
-            dp[i] = min(dp[i], dp[i-j*j] + 1);
-        }
-    }
-    cout << dp[n] << '\n';
-    return 0;
-}*/
+    fast_io;
+    cin >> N;
+    memset(dp,-1,sizeof(dp));
+    cout << solve(N);
+}

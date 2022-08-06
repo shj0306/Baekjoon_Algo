@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/tjgml/clion/CodingTest/2.cpp
+bits/stdc++.h
+-
+
+C:/Users/tjgml/clion/CodingTest/2021카카오채용연계형1.cpp
+bits/stdc++.h
+-
+
+C:/Users/tjgml/clion/CodingTest/2021카카오채용연계형2.cpp
+bits/stdc++.h
+-
+
+C:/Users/tjgml/clion/CodingTest/2021카카오채용연계형3.cpp
+bits/stdc++.h
+-
+
+C:/Users/tjgml/clion/CodingTest/2021카카오채용연계형4.cpp
+bits/stdc++.h
+-
+
